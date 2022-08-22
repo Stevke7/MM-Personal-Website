@@ -7,6 +7,7 @@ function About() {
 				<Container>
 					<h1>About is under construction</h1>
 					<h2>samo za init</h2>
+					<h3>duckaj ga Dzasto Dzaka</h3>
 				</Container>
 			</Container>
 		</>
