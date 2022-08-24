@@ -1,6 +1,7 @@
 import {Col, Container, Row} from "react-bootstrap";
 
 function About() {
+
     return (
         <>
             <Container>
@@ -10,6 +11,7 @@ function About() {
             </Container>
         </>
     );
+	
 }
 
 export default About;
