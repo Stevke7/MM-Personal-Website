@@ -1,18 +1,14 @@
-import {Col, Container, Row} from "react-bootstrap";
 import Hero from "./components/Hero";
-import TextLoop from "./components/TextLoop";
+import MyWork from "./components/myWork";
 
 
 function Home() {
-
     return (
         <>
             <Hero/>
+            <MyWork/>
         </>
-
-
     )
-
 }
 
 export default Home

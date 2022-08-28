@@ -69,7 +69,7 @@ function Header() {
     }
 
     return (
-        <div className="background-light">
+        <div>
             < Container>
                 < Row className="py-3 justify-content-between align-items-center">
                     < Col className="d-flex align-items-center " md={4}>
@@ -104,7 +104,7 @@ function Header() {
                         <FormGroup>
                             <FormControlLabel
                                 control={<MaterialUISwitch sx={{m: 1}} defaultChecked/>}
-                                
+
                             />
                         </FormGroup>
                     </Col>

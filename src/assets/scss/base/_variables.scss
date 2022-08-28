@@ -1,10 +1,14 @@
-$primary: #2A7AF1;
+$primary: #B9EBFD;
+$primary-blue: #3A86FF;
+$primary-blue-lighter: rgba(58, 134, 255, 0.8);
+
+$background: #F4F7FA;
+$background-dark: #E0EAF4;
 $secondary: #1C1D20;
 $secondary-light: #D7D7D8;
 $secondary-dark: #414141;
 $info: #952CB7;
 $info-lighter: #FAF5FF;
-$success: #B9EBFD;
 $success-lighter: #ECFFF4;
 $warning: #FC9D79;
 $warning-lighter: #FFF7F3;
@@ -14,7 +18,7 @@ $black: #000000;
 $light-gray: #eeeeee;
 $white: #ffffff;
 
-$background-white: $white;
+$background-white: $background;
 $background-dark: $secondary;
 
 //Text color

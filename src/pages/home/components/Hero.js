@@ -1,4 +1,4 @@
-import {Button, Container} from "react-bootstrap";
+import {Button} from "react-bootstrap";
 import {motion} from "framer-motion";
 import AnimatedText from "./animate/AnimatedText";
 import {BiDownArrowAlt} from "react-icons/bi";
@@ -6,7 +6,6 @@ import TextLoop from "./TextLoop";
 
 
 function Hero() {
-
     const placeholderText = [
         {
             text: "I DESIGN UNIQUE WEB / GRAPHIC EXPERIENCES Crafting " +
@@ -21,10 +20,8 @@ function Hero() {
             }
         }
     };
-
     return (
         <motion.div
-            className="background-light height100vh"
             initial="hidden"
             animate="visible"
             variants={container}
@@ -37,11 +34,11 @@ function Hero() {
                 <div className="w-auto d-flex mt-5 align-items-center justify-content-center">
                     <Button className="btn btn-primary fw-normal">Explore<BiDownArrowAlt/></Button>
                 </div>
+
             </div>
             <TextLoop/>
         </motion.div>
     );
-
 
 }
 
