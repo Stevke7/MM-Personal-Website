@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8b49697f-028c-4758-b353-381630052f6e" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/assets/scss/base/_body.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/base/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/pages/hero.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/components/TextLoop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -21,12 +24,12 @@
       <change beforePath="$PROJECT_DIR$/src/assets/scss/base/variables.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/base/variables.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/base/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/base/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/style.react.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/style.react.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/style.react.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/style.react.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/style.react.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/style.react.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/components/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/Hero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/components/animate/AnimatedText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/animate/AnimatedText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.js" afterDir="false" />
@@ -103,7 +106,7 @@
       <workItem from="1661196099726" duration="3068000" />
       <workItem from="1661362105081" duration="717000" />
       <workItem from="1661615870500" duration="2944000" />
-      <workItem from="1661618832311" duration="11350000" />
+      <workItem from="1661618832311" duration="11655000" />
     </task>
     <servers />
   </component>
