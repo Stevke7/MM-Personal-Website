@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
 .background-dark {
   background-color: $background-dark;
 }
@@ -54,15 +63,16 @@ nav {
 
       &.active {
         position: relative;
+        font-weight: 500;
 
-        .dot {
+        .line {
           content: '';
           position: absolute;
           display: flex;
           justify-content: center;
-          background-color: #2A7AF1;
-          width: 8px;
-          height: 8px;
+          background: #303030;
+          width: 32px;
+          height: 4px;
           border-radius: 10px;
           top: 30px;
         }
@@ -71,37 +81,14 @@ nav {
   }
 }
 
-.heading-text {
-  h1 {
-    font-size: 4rem;
-  }
-
-  height: 85vh;
+.marquee {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+  background-color: $black;
 
-  .second-line {
-    padding-top: 17px;
-    margin-left: 20rem;
-  }
-
-  .third-line {
-    h1 {
-      margin: 0;
-    }
-  }
-
-  .fourth-line {
-
-    width: 25%;
-    line-height: 17px;
-    text-align: left;
-
-    p {
-      margin: 0;
-      font-size: 12px;
-    }
+  & div {
+    width: fit-content;
+    color: $white;
+    font-size: 20px;
   }
 }

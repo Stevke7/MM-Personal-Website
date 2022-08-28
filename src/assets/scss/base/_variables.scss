@@ -4,13 +4,13 @@ $secondary-light: #D7D7D8;
 $secondary-dark: #414141;
 $info: #952CB7;
 $info-lighter: #FAF5FF;
-$success: #68CB92;
+$success: #B9EBFD;
 $success-lighter: #ECFFF4;
 $warning: #FC9D79;
 $warning-lighter: #FFF7F3;
 $danger: #ED4052;
 $danger-lighter: #FFF8F9;
-$black: #2E3033;
+$black: #000000;
 $light-gray: #eeeeee;
 $white: #ffffff;
 
@@ -20,6 +20,9 @@ $background-dark: $secondary;
 //Text color
 $dark-text: #2E3033;
 $light-text: #9EA5AB;
+
+//Buttons color
+$primary-button-bg: $success;
 
 //Font weight
 $font-weight-medium: 500;

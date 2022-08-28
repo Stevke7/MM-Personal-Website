@@ -1,0 +1,25 @@
+.btn-primary {
+  background-color: $success;
+  border: 2px solid $black;
+  border-radius: 16px;
+  padding: 20px 32px 20px 32px;
+  color: $black;
+  outline: none;
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+    transition: 0.4s ease all;
+    border: none;
+    border: 2px solid $black;
+  }
+
+  &:focus {
+    background-color: $black;
+    box-shadow: none;
+    color: $white;
+    border-color: $black;
+
+  }
+
+}
