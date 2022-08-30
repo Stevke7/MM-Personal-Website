@@ -8,7 +8,7 @@ function Footer() {
         <div>
             <div className="bg-black">
                 <Container>
-                    <Row className="p-5 align-items-center">
+                    <Row className="py-5 align-items-center">
                         <Col md={8} className="py-5">
                             <h1 className='text-white '>
                                 <span className='fw-bold'>Have something in mind?</span>

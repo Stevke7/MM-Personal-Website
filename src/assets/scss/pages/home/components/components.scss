@@ -123,7 +123,6 @@
 
 .work-info {
   font-size: 34px;
-
 }
 
 .checkoutMyWork {
@@ -131,6 +130,7 @@
   right: -45px;
   top: 60px;
 }
+
 
 .social-icon {
   padding: 1.5rem;
@@ -141,5 +141,38 @@
   img {
     width: 60px;
     height: 60px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .img-text-right {
+    font-size: 40px !important;
+  }
+  .img-text-left {
+    font-size: 40px !important;
+  }
+  .work-info {
+    font-size: 18px;
+  }
+  .checkoutMyWork {
+    position: absolute;
+    right: 50px;
+    top: 135px;
+  }
+  .badge {
+    padding: 8px;
+    margin: 3px 8px;
+    background-color: rgba(43, 113, 225, 1);
+    color: $white;
+    font-size: 14px !important;
+  }
+  .social-icon {
+    padding: 1rem;
+    border-radius: 15px;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 }

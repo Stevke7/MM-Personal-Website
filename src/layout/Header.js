@@ -1,8 +1,9 @@
-import {Col, Container, Form, Nav, Row} from "react-bootstrap";
+import {Col, Container, Form, Image, Nav, Row} from "react-bootstrap";
 import {NavLink, useLocation} from "react-router-dom";
 import ReactSwitch from "react-switch";
 import {useState} from "react";
 import {FormControlLabel, FormGroup, styled, Switch} from "@mui/material";
+import {useMediaQuery} from "react-responsive";
 
 
 const MaterialUISwitch = styled(Switch)(({theme}) => ({
@@ -53,9 +54,9 @@ const MaterialUISwitch = styled(Switch)(({theme}) => ({
 }));
 
 function Header() {
-    const location = useLocation()
+    const isMobile = useMediaQuery({query: `(max-width: 1024px)`});
 
-    const route = location.pathname.split("/")[1]
+
     let tabs = {
         home: "",
         work: "work",
@@ -70,46 +71,60 @@ function Header() {
 
     return (
         <div>
-            < Container>
-                < Row className="py-3 justify-content-between align-items-center">
-                    < Col className="d-flex align-items-center " md={4}>
-                        <img src='/images/Logo/Logo.svg' alt="logo"/>
-                    </Col>
-                    <Col md={4}>
-                        <nav className='d-flex justify-content-center m-0 '>
-                            <div className="nav-link">
-                                <NavLink
-                                    className="text-black"
-                                    to={tabs.home}>Home
-                                    <div className="line"></div>
-                                </NavLink>
-                            </div>
-                            <div className="nav-link mx-5  ">
-                                <NavLink
-                                    className="text-black"
-                                    to={tabs.work}>Work
-                                    <div className="line"></div>
-                                </NavLink>
-                            </div>
-                            <div className="nav-link">
-                                <NavLink
-                                    className="text-black"
-                                    to={tabs.contact}>Contact
-                                    <div className="line"></div>
-                                </NavLink>
-                            </div>
-                        </nav>
-                    </Col>
-                    <Col md={4} className="d-flex justify-content-end w-25">
-                        <FormGroup>
-                            <FormControlLabel
-                                control={<MaterialUISwitch sx={{m: 1}} defaultChecked/>}
+            {!isMobile &&
+                <Container>
+                    <Row className="py-3 justify-content-between align-items-center">
+                        <Col className="d-flex align-items-center " md={4}>
+                            <img src='/images/Logo/Logo.svg' alt="logo"/>
+                        </Col>
+                        <Col md={4}>
+                            <nav className='d-flex justify-content-center m-0 '>
+                                <div className="nav-link">
+                                    <NavLink
+                                        className="text-black"
+                                        to={tabs.home}>Home
+                                        <div className="line"></div>
+                                    </NavLink>
+                                </div>
+                                <div className="nav-link mx-5  ">
+                                    <NavLink
+                                        className="text-black"
+                                        to={tabs.work}>Work
+                                        <div className="line"></div>
+                                    </NavLink>
+                                </div>
+                                <div className="nav-link">
+                                    <NavLink
+                                        className="text-black"
+                                        to={tabs.contact}>Contact
+                                        <div className="line"></div>
+                                    </NavLink>
+                                </div>
+                            </nav>
+                        </Col>
+                        <Col md={4} className="d-flex justify-content-end w-25">
+                            <FormGroup>
+                                <FormControlLabel
+                                    control={<MaterialUISwitch sx={{m: 1}} defaultChecked/>}
+                                />
+                            </FormGroup>
+                        </Col>
+                    </Row>
+                </Container>
+            }
+            {/*Different layout for mobile screen*/}
 
-                            />
-                        </FormGroup>
-                    </Col>
-                </Row>
-            </Container>
+            {isMobile &&
+                <Container>
+                    <div className="py-3 d-flex justify-content-between align-items-center">
+
+                        <Image src='/images/Logo/Logo.svg' alt="logo"/>
+
+                        <Image src='/icons/hamburger.svg'/>
+                    </div>
+                </Container>
+            }
+
         </div>
     )
 }

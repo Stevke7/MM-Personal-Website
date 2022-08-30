@@ -13,6 +13,7 @@ function Hero() {
                 " experience focused approach"
         },
     ];
+
     const container = {
         visible: {
             transition: {
@@ -26,7 +27,7 @@ function Hero() {
             animate="visible"
             variants={container}
         >
-            <div className="container heading-text">
+            <div className="container heading-text my-5">
                 {placeholderText.map((item, index) => {
                     return <AnimatedText {...item} key={index}/>;
                 })}
