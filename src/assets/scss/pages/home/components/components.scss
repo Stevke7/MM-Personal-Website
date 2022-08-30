@@ -1,0 +1,145 @@
+.image-container-right {
+
+  height: 70vh;
+  position: relative;
+  border-radius: 24px;
+
+  img {
+    border-radius: 20px;
+  }
+
+  .img-text-left {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $white;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-family: 'New Title', serif;
+    font-size: 70px;
+  }
+}
+
+.image-container-left {
+  height: 33.5vh;
+  position: relative;
+  border-radius: 24px;
+
+  img {
+    border-radius: 20px;
+  }
+
+  .img-text-right {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $white;
+    bottom: 0.5rem;
+    left: 1.5rem;
+    font-family: 'New Title', serif;
+    font-size: 60px;
+  }
+
+  .more-info-icon {
+    position: absolute;
+    bottom: 1.6rem;
+    right: 1.5rem;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: $white;
+    background-color: $black;
+    border-color: 2px solid $black;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s ease all;
+    z-index: 5;
+
+
+    &.active-more {
+      transform: rotate(45deg);
+
+    }
+
+  }
+
+  & .moreAbout {
+    display: none;
+    transition: 3s ease all;
+    font-size: 18px;
+
+    &.active-about {
+      display: flex;
+      transition: 0.3s ease all;
+      border-radius: 20px;
+      position: absolute;
+
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      background-color: $primary;
+    }
+  }
+
+  & .moreSkill {
+    display: none;
+    transition: 3s ease all;
+    border-radius: 20px;
+    padding: 8px;
+
+
+    .badge {
+      padding: 8px;
+      margin: 3px 8px;
+      background-color: rgba(43, 113, 225, 1);
+      color: $white;
+      font-size: 18px;
+    }
+
+    &.active-skill {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: 0.3s ease all;
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $primary-blue;
+
+    }
+  }
+
+}
+
+.myWork-img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.work-info {
+  font-size: 34px;
+
+}
+
+.checkoutMyWork {
+  position: absolute;
+  right: -45px;
+  top: 60px;
+}
+
+.social-icon {
+  padding: 1.5rem;
+  background-color: $black;
+  border-radius: 20px;
+  cursor: pointer;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}

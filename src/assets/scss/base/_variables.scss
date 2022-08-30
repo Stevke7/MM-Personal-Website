@@ -19,7 +19,7 @@ $light-gray: #eeeeee;
 $white: #ffffff;
 
 $background-white: $background;
-$background-dark: $secondary;
+$bg-black: $black;
 
 //Text color
 $dark-text: #2E3033;
@@ -27,6 +27,20 @@ $light-text: #9EA5AB;
 
 //Buttons color
 $primary-button-bg: $success;
+
+//background
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.background-dark {
+  background-color: $background-dark;
+}
+
+.background-light {
+  background-color: $background-white;
+}
 
 //Font weight
 $font-weight-medium: 500;

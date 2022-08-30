@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import MyWork from "./components/myWork";
+import Social from "./components/Social";
 
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
         <>
             <Hero/>
             <MyWork/>
+            <Social/>
         </>
     )
 }
