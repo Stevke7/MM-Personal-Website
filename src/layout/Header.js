@@ -1,4 +1,4 @@
-import {Col, Container, Form, Image, Nav, Row} from "react-bootstrap";
+import {Col, Container, Form, Image, Nav, Offcanvas, Row} from "react-bootstrap";
 import {NavLink, useLocation} from "react-router-dom";
 import ReactSwitch from "react-switch";
 import {useState} from "react";
@@ -64,10 +64,15 @@ function Header() {
     }
 
     const [toggle, setToggle] = useState(true)
+    const [show, setShow] = useState(false);
 
-    function handleToggle() {
-        setToggle(!toggle)
-    }
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+
+    // function handleMenuToggle() {
+    //     setMenuToggle(prevState => !prevState)
+    // }
 
     return (
         <div>
@@ -115,14 +120,60 @@ function Header() {
             {/*Different layout for mobile screen*/}
 
             {isMobile &&
-                <Container>
-                    <div className="py-3 d-flex justify-content-between align-items-center">
+                <>
+                    <Container>
+                        <div className="py-3 d-flex justify-content-between align-items-center">
+                            <Image src='/images/Logo/Logo.svg' alt="logo"/>
+                            <Image className='hamburger' onClick={handleShow}
+                                   src='/icons/hamburger.svg'/>
+                        </div>
+                    </Container>
+                    {show && <div className={`mobileMenu position-relative `}>
+                        <Offcanvas className='toggle' placement={"end"} show={show}
+                                   onHide={handleClose}
+                                   backdrop="static">
+                            <Offcanvas.Header closeButton></Offcanvas.Header>
+                            <Offcanvas.Body>
+                                <div className="d-flex flex-column justify-content-between my-5  h-85">
+                                    <p className='border-bottom pb-3 text-white'>NAVIGATION</p>
+                                    <nav id='mobile' className='d-flex flex-column align-items-start m-0 '>
+                                        <div className="nav-link">
+                                            <NavLink
+                                                onClick={handleClose}
+                                                className="text-white"
+                                                to={tabs.home}>Home
+                                            </NavLink>
+                                        </div>
+                                        <div className="nav-link   ">
+                                            <NavLink
+                                                onClick={handleClose}
+                                                className="text-white"
+                                                to={tabs.work}>Work
+                                            </NavLink>
+                                        </div>
+                                        <div className="nav-link">
+                                            <NavLink
+                                                onClick={handleClose}
+                                                className="text-white"
+                                                to={tabs.contact}>Contact
+                                            </NavLink>
+                                        </div>
+                                    </nav>
+                                    <div className="d-flex flex-column text-white align-items-start ">
+                                        <p className='border-top text-white pt-3 w-100'> SOCIAL</p>
+                                        <div className="d-flex align-items-center justify-content-between w-100">
+                                            <p>Instagram</p>
+                                            <p>Behance</p>
+                                            <p>Dribble</p>
+                                            <p>LinkedIn</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Offcanvas.Body>
+                        </Offcanvas>
+                    </div>}
 
-                        <Image src='/images/Logo/Logo.svg' alt="logo"/>
-
-                        <Image src='/icons/hamburger.svg'/>
-                    </div>
-                </Container>
+                </>
             }
 
         </div>

@@ -176,3 +176,40 @@
     }
   }
 }
+
+.hamburger {
+  z-index: 2;
+}
+
+.mobileMenu {
+  z-index: 2;
+}
+
+.toggle {
+  width: 100%;
+  background-color: $black;
+
+}
+
+.offcanvas-header {
+  position: relative;
+
+
+  button {
+    background-color: $primary;
+    padding: 10px !important;
+    color: $black !important;
+    border-radius: 30px;
+    position: absolute;
+    right: 39px;
+    top: 44px;
+    opacity: unset;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+#mobile {
+  font-size: 45px;
+}
+

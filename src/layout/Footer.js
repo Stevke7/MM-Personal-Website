@@ -1,6 +1,6 @@
 import {Button, Col, Container, Row} from "react-bootstrap";
 import {BsArrowRight} from "react-icons/bs";
-import {Table} from "@mui/material";
+
 
 function Footer() {
 
@@ -19,14 +19,14 @@ function Footer() {
                                 className="ms-2"/></Button>
                         </Col>
                         <Col md={4} className="py-5">
-                            <div className="d-flex  justify-content-between">
+                            <div className="d-flex flex-column flex-lg-row m justify-content-between">
                                 <div className="contact-details text-white">
-                                    <p>CONTACT DETAILS</p>
-                                    <p>info@milosmiljanovic.com</p>
+                                    <p className='fw-bold'>CONTACT DETAILS</p>
+                                    <p className='text-decoration-underline'>info@milosmiljanovic.com</p>
                                     <p>Bosnia & Herzegovina</p>
                                 </div>
-                                <div className="social text-white">
-                                    <p>SOCIAL</p>
+                                <div className="social text-white mt-3 mt-md-0">
+                                    <p className='fw-bold '>SOCIAL</p>
                                     <p className='cursor-pointer'>Dribble</p>
                                     <p className='cursor-pointer'>LinkedIn</p>
                                     <p className='cursor-pointer'>Instagram</p>
