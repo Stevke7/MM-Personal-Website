@@ -1,25 +1,46 @@
-$primary: #2A7AF1;
+$primary: #B9EBFD;
+$primary-blue: #3A86FF;
+$primary-blue-lighter: rgba(58, 134, 255, 0.8);
+
+$background: #F4F7FA;
+$background-dark: #E0EAF4;
 $secondary: #1C1D20;
 $secondary-light: #D7D7D8;
 $secondary-dark: #414141;
 $info: #952CB7;
 $info-lighter: #FAF5FF;
-$success: #68CB92;
 $success-lighter: #ECFFF4;
 $warning: #FC9D79;
 $warning-lighter: #FFF7F3;
 $danger: #ED4052;
 $danger-lighter: #FFF8F9;
-$black: #2E3033;
+$black: #000000;
 $light-gray: #eeeeee;
 $white: #ffffff;
 
-$background-white: $white;
-$background-dark: $secondary;
+$background-white: $background;
+$bg-black: $black;
 
 //Text color
 $dark-text: #2E3033;
 $light-text: #9EA5AB;
+
+//Buttons color
+$primary-button-bg: $success;
+
+//background
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.background-dark {
+  background-color: $background-dark;
+}
+
+.background-light {
+  background-color: $background-white;
+}
 
 //Font weight
 $font-weight-medium: 500;

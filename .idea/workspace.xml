@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b49697f-028c-4758-b353-381630052f6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/pages/home/components/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/pages/home/components/components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/pages/home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/pages/home/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/components/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/components/Social.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/Social.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/components/TextLoop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/TextLoop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/components/animate/AnimatedText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/animate/AnimatedText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/components/myWork.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/myWork.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +44,22 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nikolaj15/Desktop/Sajtovi/portfolio-site/public&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nikolaj15/Desktop/projekti/Sajtovi/Misko/src/assets/scss/pages/hero&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/scss/pages/hero" />
+      <recent name="$PROJECT_DIR$/src/pages/home" />
+      <recent name="$PROJECT_DIR$/src/pages/home/components" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/assets/scss/base" />
-      <recent name="$PROJECT_DIR$/src/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/scss" />
@@ -77,6 +84,13 @@
       <workItem from="1659302245295" duration="267000" />
       <workItem from="1659542218107" duration="3429000" />
       <workItem from="1661188313743" duration="27000" />
+      <workItem from="1661196099726" duration="3068000" />
+      <workItem from="1661362105081" duration="717000" />
+      <workItem from="1661615870500" duration="2944000" />
+      <workItem from="1661618832311" duration="11655000" />
+      <workItem from="1661758441932" duration="22000" />
+      <workItem from="1661795741942" duration="1162000" />
+      <workItem from="1661797044517" duration="16574000" />
     </task>
     <servers />
   </component>
@@ -93,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

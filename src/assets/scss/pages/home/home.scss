@@ -1,0 +1,143 @@
+
+.heading-text {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+  }
+
+  .first-line, .third-line {
+    width: 57rem;
+    text-align: left;
+
+    .third-line-left {
+      h1 {
+        margin: 0;
+      }
+    }
+
+    .third-line-right {
+      width: 31%;
+      line-height: 17px;
+      text-align: left;
+      padding-bottom: 7px;
+
+      p {
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+
+
+}
+
+.second-line {
+  padding-top: 17px;
+  margin-left: 27rem;
+}
+
+@media (max-width: 1024px) {
+  .text-loop {
+    font-size: 16px !important;
+  }
+
+  .heading-text {
+    height: fit-content;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+
+    .first-line, .third-line, .second-line {
+      width: fit-content;
+
+      h1 {
+        font-size: 60px;
+      }
+    }
+
+    .second-line {
+      padding-top: 5px;
+      margin-left: 5rem;
+
+    }
+
+    .third-line-right {
+      text-align: center;
+      width: 100% !important;
+      line-height: 17px;
+
+
+      p {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-size: 26px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 550px) {
+  .heading-text {
+    width: 100%;
+
+    .first-line, .third-line, .second-line {
+      h1 {
+        font-size: 35px;
+      }
+    }
+
+    .second-line {
+      padding-top: 5px;
+      width: 100%;
+      text-align: right;
+      margin: 0;
+
+    }
+
+    .third-line-right {
+      text-align: center;
+      width: 100% !important;
+      line-height: 17px;
+
+
+      p {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .heading-text {
+    width: 100%;
+
+
+    .first-line, .third-line, .second {
+      width: fit-content;
+      text-align: start;
+
+      h1 {
+        font-size: 30px;
+
+      }
+    }
+
+    .third-line-left {
+      width: fit-content;
+
+    }
+  }
+}
