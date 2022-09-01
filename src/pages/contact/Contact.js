@@ -1,15 +1,12 @@
-import {Col, Container, Row} from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import ContactForm from "./components/contactForm";
 
 function Contact() {
-
-    return (
-        <>
-            <Container>
-                <h1>Contact is under construction</h1>
-            </Container>
-        </>
-    )
-
+	return (
+		<>
+			<ContactForm />
+		</>
+	);
 }
 
-export default Contact
+export default Contact;
