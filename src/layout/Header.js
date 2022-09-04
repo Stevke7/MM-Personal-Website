@@ -1,7 +1,7 @@
 import {Col, Container, Form, Image, Nav, Offcanvas, Row} from "react-bootstrap";
 import {NavLink, useLocation} from "react-router-dom";
 import ReactSwitch from "react-switch";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {FormControlLabel, FormGroup, styled, Switch} from "@mui/material";
 import {useMediaQuery} from "react-responsive";
 
@@ -53,26 +53,23 @@ const MaterialUISwitch = styled(Switch)(({theme}) => ({
     },
 }));
 
-function Header() {
+function Header(props) {
+    let {setTheme, id} = props
     const isMobile = useMediaQuery({query: `(max-width: 1024px)`});
-
-
     let tabs = {
         home: "",
         work: "work",
         contact: "contact"
     }
 
-    const [toggle, setToggle] = useState(true)
+
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-
-    // function handleMenuToggle() {
-    //     setMenuToggle(prevState => !prevState)
-    // }
+    const toggleTheme = () => {
+        setTheme((curr) => (curr === "light" ? "dark" : "light"));
+    };
 
     return (
         <div>
@@ -80,27 +77,28 @@ function Header() {
                 <Container>
                     <Row className="py-3 justify-content-between align-items-center">
                         <Col className="d-flex align-items-center " md={4}>
-                            <img src='/images/Logo/Logo.svg' alt="logo"/>
+                            <img src={`${id === 'light' ? '/images/Logo/Logo.svg' : 'images/Logo/logo-whitesvg.svg'}`}
+                                 alt="logo"/>
                         </Col>
                         <Col md={4}>
                             <nav className='d-flex justify-content-center m-0 '>
                                 <div className="nav-link">
                                     <NavLink
-                                        className="text-black"
+                                        // className="text-black"
                                         to={tabs.home}>Home
                                         <div className="line"></div>
                                     </NavLink>
                                 </div>
                                 <div className="nav-link mx-5  ">
                                     <NavLink
-                                        className="text-black"
+                                        // className="text-black"
                                         to={tabs.work}>Work
                                         <div className="line"></div>
                                     </NavLink>
                                 </div>
                                 <div className="nav-link">
                                     <NavLink
-                                        className="text-black"
+                                        // className="text-black"
                                         to={tabs.contact}>Contact
                                         <div className="line"></div>
                                     </NavLink>
@@ -109,8 +107,8 @@ function Header() {
                         </Col>
                         <Col md={4} className="d-flex justify-content-end w-25">
                             <FormGroup>
-                                <FormControlLabel
-                                    control={<MaterialUISwitch sx={{m: 1}} defaultChecked/>}
+                                <FormControlLabel onClick={toggleTheme}
+                                                  control={<MaterialUISwitch sx={{m: 1}}/>}
                                 />
                             </FormGroup>
                         </Col>

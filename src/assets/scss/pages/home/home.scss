@@ -10,7 +10,33 @@
     font-style: normal;
     font-weight: 400;
     font-size: 90px;
+
   }
+
+  #light {
+    .word-wrapper {
+      h1 {
+        color: $black;
+      }
+
+      p {
+        color: $black;
+      }
+    }
+  }
+
+  #dark {
+    .word-wrapper {
+      h1 {
+        color: $white;
+      }
+
+      p {
+        color: $white;
+      }
+    }
+  }
+
 
   .first-line, .third-line {
     width: 57rem;

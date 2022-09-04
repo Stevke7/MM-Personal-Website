@@ -5,12 +5,14 @@ import {BiDownArrowAlt} from "react-icons/bi";
 import TextLoop from "./TextLoop";
 
 
-function Hero() {
+function Hero(props) {
+    let {id} = props
     const placeholderText = [
         {
             text: "I DESIGN UNIQUE WEB / GRAPHIC EXPERIENCES Crafting " +
                 "digital experiences for businesses with a user interface and user" +
-                " experience focused approach"
+                " experience focused approach",
+            id: id
         },
     ];
 
@@ -27,9 +29,9 @@ function Hero() {
             animate="visible"
             variants={container}
         >
-            <div className="container heading-text my-5">
-                {placeholderText.map((item, index) => {
-                    return <AnimatedText {...item} key={index}/>;
+            <div className="container heading-text my-3">
+                {placeholderText.map((item, index, id) => {
+                    return <AnimatedText id={id} {...item} key={index}/>;
                 })}
 
                 <div className="w-auto d-flex mt-5 align-items-center justify-content-center">

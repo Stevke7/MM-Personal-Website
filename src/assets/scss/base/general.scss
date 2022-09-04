@@ -4,13 +4,22 @@
   box-sizing: border-box;
 }
 
+
 body {
   scrollbar-width: none;
-  background-color: $background;
+  background-color: $background-light;
 
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+#light {
+  background-color: $background-light;
+}
+
+#dark {
+  background-color: $background-dark;
 }
 
 .fit-content {
@@ -27,9 +36,18 @@ body {
   background-color: $black;
 
   & div {
-    width: fit-content;
     color: $white;
     font-size: 20px;
+  }
+}
+
+#dark {
+  .marquee {
+    background-color: $white;
+
+    div {
+      color: $black;
+    }
   }
 }
 
