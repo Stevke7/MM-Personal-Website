@@ -1,3 +1,4 @@
+
 nav {
   margin-top: 10px;
 
@@ -7,6 +8,7 @@ nav {
     padding: 0;
 
     a {
+      color: $secondary;
       text-decoration: none;
       margin-top: 3px;
       display: flex;
@@ -29,6 +31,30 @@ nav {
           border-radius: 10px;
           top: 30px;
         }
+      }
+    }
+  }
+}
+
+#light {
+  .nav-link {
+    a {
+      color: $secondary;
+
+      .line {
+        background: #303030;
+      }
+    }
+  }
+}
+
+#dark {
+  .nav-link {
+    a {
+      color: $white;
+
+      .line {
+        background: $primary;
       }
     }
   }

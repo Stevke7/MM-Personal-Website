@@ -3,10 +3,11 @@ import MyWork from "./components/myWork";
 import Social from "./components/Social";
 
 
-function Home() {
+function Home(props) {
+    let {id} = props
     return (
         <>
-            <Hero/>
+            <Hero id={id}/>
             <MyWork/>
             <Social/>
         </>

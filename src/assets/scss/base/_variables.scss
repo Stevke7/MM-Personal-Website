@@ -3,8 +3,8 @@ $primary-dark: #9CD1FCFF;
 $primary-blue: #3A86FF;
 $primary-blue-lighter: rgba(58, 134, 255, 0.8);
 
-$background: #F4F7FA;
-$background-dark: #E0EAF4;
+$background-light: #F4F7FA;
+$background-dark: $black;
 $secondary: #1C1D20;
 $secondary-light: #D7D7D8;
 $secondary-dark: #414141;
@@ -19,8 +19,6 @@ $black: #000000;
 $light-gray: #eeeeee;
 $white: #ffffff;
 
-$background-white: $background;
-$bg-black: $black;
 
 //Text color
 $dark-text: #2E3033;
@@ -40,7 +38,7 @@ $primary-button-bg: $success;
 }
 
 .background-light {
-  background-color: $background-white;
+  background-color: $background-light;
 }
 
 //Font weight

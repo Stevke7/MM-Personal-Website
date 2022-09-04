@@ -3,7 +3,7 @@ import {GiPolarStar} from "react-icons/gi";
 
 function TextLoop() {
     return (
-        <Marquee pauseOnHover={true} speed={80} gradient={false}
+        <Marquee pauseOnHover={true} speed={100} gradient={false}
                  className="w-100  cursor-pointer marquee py-4 d-flex align-items-center "
                  direction={"right"}>
             <div className="text-uppercase  px-2  d-flex align-items-center">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {motion} from "framer-motion";
 import {useMediaQuery} from "react-responsive";
 
@@ -8,30 +8,34 @@ const Wrapper = (props) => {
 };
 
 const AnimatedCharacters = (props) => {
+    console.log(props.id)
+
+
     const item = {
         hidden: {
             y: "200%",
-            color: "#000",
+
             transition: {ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85}
         },
         visible: {
             y: 0,
-            color: "#000",
+
             transition: {ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75}
         }
     };
     const paragraph = {
         hidden: {
             y: "300%",
-            color: "#000",
+
             transition: {ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85}
         },
         visible: {
             y: 0,
-            color: "#000",
+
             transition: {ease: [0.455, 0.03, 0.515, 0.955], duration: 0.40}
         }
     }
+
     const isMobile = useMediaQuery({query: `(max-width: 1024px)`});
     const splitWords = props.text.split(" ");
     const words = [];
@@ -55,8 +59,6 @@ const AnimatedCharacters = (props) => {
     const secondLine = words.slice(3, 6)
     const thirdLine = words.slice(6, 7)
     const fourthLine = smallWords.slice(7)
-    const thirdLineM = words.slice(6, -1)
-    console.log(thirdLineM)
 
     const firstWord = fourthLine[0].flat()
     const secondWord = fourthLine[1].flat()
@@ -75,7 +77,7 @@ const AnimatedCharacters = (props) => {
 
     return (
         <>
-            {!isMobile ? <div className="d-flex flex-column align-items-center">
+            {!isMobile ? <div id={props.id} className="d-flex flex-column align-items-center">
                     <div className="first-line">
                         {firstLine.map((word, index) => {
                             return (
@@ -84,7 +86,8 @@ const AnimatedCharacters = (props) => {
                                         return (
                                             <>
                                                 <h1 style={{overflow: "hidden", display: "inline-block"}} key={index}>
-                                                    <motion.span style={{display: "inline-block"}} variants={item}>
+                                                    <motion.span style={{display: "inline-block"}}
+                                                                 variants={item}>
                                                         {element}
                                                     </motion.span>
                                                 </h1>
