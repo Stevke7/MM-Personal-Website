@@ -262,7 +262,7 @@ const AnimatedCharacters = (props) => {
                                 );
                             })}
                         </div>
-                        <div className="third-line-right mt-5">
+                        <div className="third-line-right mt-4">
                             <Wrapper>
                                 <p style={{overflow: "hidden", display: "flex", flexWrap: "wrap"}}>
                                     <motion.span style={{display: "inline-block", width: "fit-content",}}

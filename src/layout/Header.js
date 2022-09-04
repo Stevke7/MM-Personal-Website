@@ -74,7 +74,7 @@ function Header(props) {
     return (
         <div>
             {!isMobile &&
-                <Container>
+                <Container className='px-5'>
                     <Row className="py-3 justify-content-between align-items-center">
                         <Col className="d-flex align-items-center " md={4}>
                             <img src={`${id === 'light' ? '/images/Logo/Logo.svg' : 'images/Logo/logo-whitesvg.svg'}`}

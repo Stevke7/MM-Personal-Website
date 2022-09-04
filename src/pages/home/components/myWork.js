@@ -20,9 +20,9 @@ function MyWork() {
     return (
         <>
             {!isMobile ?
-                <Container>
+                <Container className="px-5">
                     <h1 className="text-center my-5 ">Hi, nice to meet ya! 👋 </h1>
-                    <Row className='h-60'>
+                    <Row className=''>
                         <Col className='h-100' md={7}>
                             <div className="image-container-right h-100">
                                 <Image fluid={true} src='/images/work-img .png' className="w-100 h-100" alt=""/>
@@ -31,10 +31,10 @@ function MyWork() {
                             {/*src='/images/unsplash_fd6K_OFlnRA-1.png'*/}
 
                         </Col>
-                        <Col md={5} className='h-100 ps-0'>
-                            <div className="d-flex flex-column h-100 justify-content-between">
-                                <div onClick={openAbout} className="image-container-left cursor-pointer h-49">
-                                    <Image fluid={true} src='/images/aboutMe.png' className="w-100 h-100"
+                        <Col md={5} className='ps-0 h-100'>
+                            <div className="d-flex flex-column h-100  justify-content-between">
+                                <div onClick={openAbout} className="image-container-left   cursor-pointer h-25 ">
+                                    <Image fluid={true} src='/images/aboutMe.png' className="w-100 "
                                            alt=""/>
                                     <h3 className="img-text-right">About me</h3>
                                     <BiPlus onClick={openAbout}
@@ -53,8 +53,8 @@ function MyWork() {
                                             much more. I'm also a big fan of sports.</p>
                                     </div>
                                 </div>
-                                <div onClick={openSkill} className="image-container-left cursor-pointer h-49 ">
-                                    <Image fluid={true} src='/images/skils-img.png' className="w-100 h-100"
+                                <div onClick={openSkill} className="image-container-left   cursor-pointer h-25 ">
+                                    <Image fluid={true} src='/images/skils-img.png' className="w-100 "
                                            alt=""/>
                                     <h3 className="img-text-right">My skills</h3>
                                     <BiPlus
@@ -85,7 +85,7 @@ function MyWork() {
 
 
                     </Row>
-                    <Col className='h-35' md={12}>
+                    <Col className='' md={12}>
                         <div
                             className="bg-primary align-items-center h-100 radius20 mt-4 d-flex flex-md-column flex-lg-row align-items-center justify-content-between ">
                             <div className=" position-relative">
