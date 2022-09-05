@@ -6,7 +6,7 @@ function Social() {
     return (
         <>
             {!isMobile ? <div className='my-5  text-center'>
-                    <h1>Find me on <span className='text-gradient'>social</span> media</h1>
+                    <h1>Find me on <span className='text-gradient-blue'>social</span> media</h1>
                     <div className="d-flex m-auto justify-content-center align-item-center mt-4 ">
                         <div className=" d-flex align-items-center ">
                             <div className="social-icon me-4 ">

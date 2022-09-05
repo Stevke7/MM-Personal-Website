@@ -7,7 +7,7 @@
 
 body {
   scrollbar-width: none;
-  background-color: $background-light;
+  background-color: $background;
 
   &::-webkit-scrollbar {
     display: none;
@@ -52,7 +52,7 @@ body {
 }
 
 .radius20 {
-  border-radius: 20px;
+  border-radius: 24px;
 }
 
 .h-60 {
