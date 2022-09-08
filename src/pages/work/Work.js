@@ -12,7 +12,7 @@ function Work() {
     const isMobile = useMediaQuery({query: `(max-width: 850px)`});
     return (
         <>
-            <Container className='px-5'>
+            <Container>
                 {!isMobile &&
                     <>
                         <div className="w-75 m-auto mt-4">
