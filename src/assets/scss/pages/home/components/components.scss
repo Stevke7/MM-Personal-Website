@@ -121,7 +121,8 @@
     color: $primary-blue;
     rotate: -15deg;
   }
-;
+
+  ;
 }
 
 .work-info {
@@ -160,17 +161,21 @@
   .img-text-right {
     font-size: 40px !important;
   }
+
   .img-text-left {
     font-size: 40px !important;
   }
+
   .work-info {
     font-size: 18px;
   }
+
   .checkoutMyWork {
     position: absolute;
     right: 50px;
     top: 135px;
   }
+
   .badge {
     padding: 8px;
     margin: 3px 8px;
@@ -178,6 +183,7 @@
     color: $white;
     font-size: 14px !important;
   }
+
   .social-icon {
     padding: 1rem;
     border-radius: 15px;
@@ -187,9 +193,7 @@
       height: 30px;
     }
 
-    &:hover {
-
-    }
+    &:hover {}
   }
 }
 
@@ -214,7 +218,7 @@
   button {
     background-color: $primary;
     padding: 10px !important;
-    color: $black !important;
+    color: $black  !important;
     border-radius: 30px;
     position: absolute;
     right: 39px;
@@ -228,4 +232,3 @@
 #mobile {
   font-size: 45px;
 }
-
