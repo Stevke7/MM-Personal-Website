@@ -13,7 +13,8 @@ function ContactForm() {
 		<Container className="containerContact px-5">
 			<div className="w-75 m-auto mt-4">
 				<h1 className="text-center my-5">
-					Let's start a Project <span className="text-gradient">together</span>
+					Let's start a Project{" "}
+					<span className="text-gradient-blue">together</span>
 				</h1>
 			</div>
 			<Row className="flex-column flex-md-row">
