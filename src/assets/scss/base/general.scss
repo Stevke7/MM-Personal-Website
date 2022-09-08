@@ -7,7 +7,7 @@
 
 body {
   scrollbar-width: none;
-  background-color: $background-light;
+  background-color: $background;
 
   &::-webkit-scrollbar {
     display: none;
@@ -41,6 +41,10 @@ body {
   }
 }
 
+.line-height-0 {
+  line-height: 0px;
+}
+
 #dark {
   .marquee {
     background-color: $white;
@@ -52,7 +56,15 @@ body {
 }
 
 .radius20 {
-  border-radius: 20px;
+  border-radius: 24px;
+}
+
+.f-27 {
+  font-size: 24px;
+}
+
+.w-77 {
+  width: 77%;
 }
 
 .h-60 {

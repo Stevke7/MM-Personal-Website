@@ -21,12 +21,12 @@ function Footer() {
                         <Col md={4} className="py-5">
                             <div className="d-flex flex-column flex-lg-row m justify-content-between">
                                 <div className="contact-details text-white">
-                                    <p className='fw-bold'>CONTACT DETAILS</p>
+                                    <p className='fw-normal opacity-50'>CONTACT DETAILS</p>
                                     <p className='text-decoration-underline'>info@milosmiljanovic.com</p>
                                     <p>Bosnia & Herzegovina</p>
                                 </div>
                                 <div className="social text-white mt-3 mt-md-0">
-                                    <p className='fw-bold '>SOCIAL</p>
+                                    <p className='fw-normal opacity-50'>SOCIAL</p>
                                     <p className='cursor-pointer'>Dribble</p>
                                     <p className='cursor-pointer'>LinkedIn</p>
                                     <p className='cursor-pointer'>Instagram</p>
@@ -35,7 +35,7 @@ function Footer() {
                             </div>
                         </Col>
                     </Row>
-                    <div className=" text-center pb-5 text-white">
+                    <div className=" fw-normal opacity-50 text-center pb-5 text-white">
                         Copyright © 2022 Design by Miloš Miljanović
                     </div>
                 </Container>

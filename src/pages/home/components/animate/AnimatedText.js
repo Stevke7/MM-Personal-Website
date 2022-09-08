@@ -77,7 +77,7 @@ const AnimatedCharacters = (props) => {
 
     return (
         <>
-            {!isMobile ? <div id={props.id} className="d-flex flex-column align-items-center">
+            {!isMobile ? <div id={props.id} className="d-flex flex-column align-items-center line-height-0">
                     <div className="first-line">
                         {firstLine.map((word, index) => {
                             return (
