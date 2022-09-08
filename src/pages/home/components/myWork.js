@@ -52,7 +52,7 @@ function MyWork() {
                                     </div>
                                 </div>
                                 <div onClick={openSkill} className="image-container-left  h-48  cursor-pointer  ">
-                                    <Image fluid={true} src='/images/skils-img.png' className="h-100 "
+                                    <Image fluid={true} src='/images/skils-img.png' className="h-100 w-100 "
                                            alt=""/>
                                     <h3 className="img-text-right">My skills</h3>
                                     <BiPlus
@@ -85,9 +85,9 @@ function MyWork() {
                     </Row>
                     <Col md={12}>
                         <div
-                            className="bg-primary align-items-center h-100 radius20 mt-5 d-flex flex-md-column flex-lg-row align-items-center justify-content-between ">
-                            <div className=" position-relative">
-                                <p className="px-5 work-info w-100">
+                            className="bg-primary-darker align-items-center h-100 radius20 mt-5 d-flex flex-md-column flex-lg-row align-items-center justify-content-between ">
+                            <div className=" w-77 position-relative">
+                                <p className="f-27 px-5 work-info w-100">
                                     <span className="fw-bold">I’m a digital designer and creator.</span>
                                     <br/>
                                     Designing digital
@@ -96,11 +96,12 @@ function MyWork() {
                                     stand out in the digital era.
                                 </p>
                                 <div className="checkoutMyWork ">
-                                    <Image src='/images/checkout.png'></Image>
+                                    <Image className="myWork-img" src='/icons/Arrow.svg'></Image>
+                                    <p>Check out <br/> my artwork</p>
                                 </div>
                             </div>
-                            <div className='h-100 w-75 '>
-                                <Image className="myWork-img" src='/images/Group 4.png'></Image>
+                            <div className=' '>
+                                <Image className="myWork-img h-100 w-100 " src='/images/Group 4.png'></Image>
                             </div>
                         </div>
                     </Col>

@@ -42,9 +42,12 @@
     width: 57rem;
     text-align: left;
 
+
     .third-line-left {
       h1 {
         margin: 0;
+
+
       }
     }
 
@@ -65,8 +68,9 @@
 }
 
 .second-line {
-  padding-top: 17px;
   margin-left: 27rem;
+
+
 }
 
 @media (max-width: 1024px) {
@@ -90,7 +94,6 @@
     }
 
     .second-line {
-      padding-top: 5px;
       margin-left: 5rem;
 
     }

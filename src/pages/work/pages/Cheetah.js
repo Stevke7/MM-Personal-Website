@@ -4,8 +4,9 @@ import {BsArrowRight} from "react-icons/bs";
 function Cheetah() {
     return (
         <>
-            <Container className="mx-5">
-                <div className="row">
+
+            <Container className="px-5 ">
+                <div className="row ">
                     <div className="d-flex justify-content-center my-5">
                         <h1>Cheetah Athletics</h1>
                     </div>
