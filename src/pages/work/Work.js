@@ -5,11 +5,9 @@ import {useNavigate} from "react-router-dom";
 
 
 function Work() {
-
     let navigate = useNavigate()
-
-
     const isMobile = useMediaQuery({query: `(max-width: 850px)`});
+
     return (
         <>
             <Container>
