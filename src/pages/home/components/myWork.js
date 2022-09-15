@@ -21,7 +21,7 @@ function MyWork() {
         <>
             {!isMobile ?
                 <Container className="px-5">
-                    <h1 className="text-center my-5 ">Hi, nice to meet ya! 👋 </h1>
+                    <h1 className="text-center my-5">Hi, nice to meet ya! 👋 </h1>
                     <Row className=''>
                         <Col md={7}>
                             <div className="image-container-right ">
@@ -189,7 +189,7 @@ function MyWork() {
                                 </div>
                             </div>
                             <div className='h-100 w-100 '>
-                                <Image className="myWork-img" src='/icons/Images-group-mobile.png'></Image>
+                                <Image className="myWork-img w-100" src='/icons/Images-group-mobile.png'></Image>
                             </div>
                         </div>
                     </Col>
