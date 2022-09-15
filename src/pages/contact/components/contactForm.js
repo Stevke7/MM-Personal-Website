@@ -7,6 +7,8 @@ import TextField from "@mui/material/TextField";
 import FormControl from "@mui/material/FormControl";
 import Input from "@mui/material/Input";
 import InputLabel from "@mui/material/InputLabel";
+import { BsDownload } from "react-icons/bs";
+import { IconContext } from "react-icons";
 
 function ContactForm() {
 	return (
@@ -56,7 +58,7 @@ function ContactForm() {
 								/>
 							</FormControl>
 						</Box>
-						<Button className="sendBtn mt-5" variant="primary" type="submit">
+						<Button className="sendBtn mt-5" type="submit">
 							Submit
 						</Button>
 					</div>
@@ -77,7 +79,20 @@ function ContactForm() {
 							<p className="cursor-pointer">Instagram</p>
 							<p className="cursor-pointer">Facebook</p>
 						</div>
-						<Button className="downloadBtn mt-5">Download my CV</Button>
+						<IconContext.Provider
+							value={{
+								style: {
+									alignItems: "center",
+									marginLeft: "5px",
+									height: "25px",
+									width: "20px",
+								},
+							}}
+						>
+							<Button className="downloadBtn mt-5">
+								Download my CV <BsDownload />
+							</Button>
+						</IconContext.Provider>
 					</div>
 				</Col>
 			</Row>

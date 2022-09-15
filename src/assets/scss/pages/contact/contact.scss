@@ -16,7 +16,19 @@
 .containerContact {
 	margin-bottom: 150px;
 }
+.sendBtn {
+	margin-bottom: 25px;
+	margin-top: 30px;
+}
 .downloadBtn {
 	margin-bottom: 25px;
 	margin-top: 30px;
+}
+@media (max-width: 520px) {
+	.contactForm {
+		margin-bottom: 20px;
+	}
+	.sendBtn {
+		margin-bottom: 25px;
+	}
 }

@@ -86,8 +86,8 @@ function Header(props) {
 							<img
 								src={`${
 									id === "light"
-										? "/images/Logo/Logo.svg"
-										: "images/Logo/logo-whitesvg.svg"
+										? "/images/Logo/Logo Dark.svg"
+										: "images/Logo/Logo Light.svg"
 								}`}
 								alt="logo"
 							/>
