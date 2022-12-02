@@ -1,72 +1,128 @@
-.btn-primary {
-	background-color: #b9ebfd;
-	border: 2px solid $black;
-	border-radius: 16px;
-	padding: 20px 32px 20px 32px;
-	color: $black;
-	outline: none;
+//.btn-primary {
+//	background-color: #b9ebfd;
+//	border: 2px solid $black;
+//	border-radius: 16px;
+//	padding: 20px 32px 20px 32px;
+//	color: $black;
+//	outline: none;
+//
+//	&:hover {
+//		color: $white;
+//		background-color: $black;
+//		transition: 0.4s ease all;
+//		border: none;
+//		border: 2px solid $black;
+//	}
+//
+//	&:focus {
+//		background-color: $black;
+//		box-shadow: none;
+//		color: $white;
+//		border-color: $black;
+//		outline: none;
+//	}
+//}
+//
+//.btn-footer {
+//	@extend .btn-primary;
+//
+//	&:hover {
+//		color: $white;
+//		background-color: $black;
+//		transition: 0.4s ease all;
+//		border: none;
+//		border: 2px solid $primary;
+//	}
+//
+//	&:focus {
+//		background-color: $black;
+//		box-shadow: none;
+//		color: $white;
+//		border-color: $primary;
+//		outline: none;
+//	}
+//}
+//
+//.badge {
+//	font-weight: 600;
+//}
+//.sendBtn {
+//	background-color: $black;
+//	color: $white;
+//
+//	&:hover {
+//		color: $black;
+//		background-color: $primary;
+//		transition: 0.4s ease all;
+//		border: none;
+//		border: 2px solid $black;
+//	}
+//}
+//.downloadBtn {
+//	background-color: $background;
+//	color: $black;
+//
+//	&:hover {
+//		color: $white;
+//		background-color: $black;
+//		transition: 0.4s ease all;
+//		border: none;
+//		border: 2px solid $black;
+//	}
+//}
+.btn {
+  padding: 12px 20px;
+  background-color: $primary;
+  border-radius: 8px;
+  border: none;
 
-	&:hover {
-		color: $white;
-		background-color: $black;
-		transition: 0.4s ease all;
-		border: none;
-		border: 2px solid $black;
-	}
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
 
-	&:focus {
-		background-color: $black;
-		box-shadow: none;
-		color: $white;
-		border-color: $black;
-		outline: none;
-	}
+  &:hover {
+    background-color: $primary;
+  }
+
+  &:active {
+    background-color: $primary;
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
 }
 
-.btn-footer {
-	@extend .btn-primary;
+.request-modal {
+  @extend .btn;
+  background-color: $primary-light;
+  color: $primary;
 
-	&:hover {
-		color: $white;
-		background-color: $black;
-		transition: 0.4s ease all;
-		border: none;
-		border: 2px solid $primary;
-	}
+  &:hover {
+    background-color: $primary-light;
+    color: $primary;
+  }
 
-	&:focus {
-		background-color: $black;
-		box-shadow: none;
-		color: $white;
-		border-color: $primary;
-		outline: none;
-	}
-}
+  &:active {
+    background-color: $primary-light;
+    color: $primary;
 
-.badge {
-	font-weight: 600;
-}
-.sendBtn {
-	background-color: $black;
-	color: $white;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
 
-	&:hover {
-		color: $black;
-		background-color: $primary;
-		transition: 0.4s ease all;
-		border: none;
-		border: 2px solid $black;
-	}
-}
-.downloadBtn {
-	background-color: $background;
-	color: $black;
+    &:hover {
+      background-color: $primary-light;
+    }
+  }
 
-	&:hover {
-		color: $white;
-		background-color: $black;
-		transition: 0.4s ease all;
-		border: none;
-		border: 2px solid $black;
-	}
+
 }
