@@ -1,12 +1,23 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { BiPlus } from "react-icons/bi";
 
 function MyServices() {
-	const [showUX, setShowUx] = useState(false);
-	const [showBranding, setShowBranding] = useState(false);
-	const [showGrahicDesign, setShowGraphicDesign] = useState(false);
+	let [showUX, setShowUx] = useState(false);
+	let [showBranding, setShowBranding] = useState(false);
+	let [showGrahicDesign, setShowGraphicDesign] = useState(false);
 	const isMobile = useMediaQuery({ query: `(max-width: 1024px)` });
+
+	function openUx() {
+		setShowUx((prevState) => !showUX);
+	}
+	function openBranding() {
+		setShowBranding((prevState) => !showBranding);
+	}
+	function openGraphicDesign() {
+		setShowGraphicDesign((prevState) => !showGrahicDesign);
+	}
 
 	return (
 		<>
@@ -15,8 +26,8 @@ function MyServices() {
 					<div className="services-content">
 						<h1 className="text-center my-5">What I can do for You</h1>
 						<div className="my-work cards">
-							<div className="card-service">
-								<div className="card-content">
+							<div className="card-service" onClick={openUx}>
+								<div className={`card-content ${showUX && "hide-content"}`}>
 									<div className="icon-circle gradient1">
 										<svg
 											width="29"
@@ -37,25 +48,25 @@ function MyServices() {
 
 									<h4>UI/UX & Web Design</h4>
 								</div>
-								<div className="see-more">
-									<svg
-										width="20"
-										height="20"
-										viewBox="0 0 20 20"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 9.99854H18M9.7037 17.9985L9.7037 1.99854"
-											stroke="black"
-											stroke-width="3"
-											stroke-linecap="round"
-										/>
-									</svg>
+								<BiPlus
+									onClick={openUx}
+									id={1}
+									className={`see-more ${showUX && "active-more-ux"}`}
+								/>
+								<div className={`more-ux ${showUX && "active-ux"}`}>
+									<div className="active-ux-content">
+										<h4>UI/UX & Web Design</h4>
+										<p>
+											Custom, responsive and beautiful. Wow your customers at a
+											first glance.
+										</p>
+									</div>
 								</div>
 							</div>
-							<div className="card-service">
-								<div className="card-content">
+							<div className="card-service" onClick={openBranding}>
+								<div
+									className={`card-content ${showBranding && "hide-content"}`}
+								>
 									<div className="icon-circle gradient2">
 										<svg
 											width="32"
@@ -76,25 +87,28 @@ function MyServices() {
 
 									<h4 className="logo-design-text">Logo Design & Branding</h4>
 								</div>
-								<div className="see-more">
-									<svg
-										width="20"
-										height="20"
-										viewBox="0 0 20 20"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 9.99854H18M9.7037 17.9985L9.7037 1.99854"
-											stroke="black"
-											stroke-width="3"
-											stroke-linecap="round"
-										/>
-									</svg>
+								<BiPlus
+									onClick={openBranding}
+									id={2}
+									className={`see-more ${showBranding && "active-more-ux"}`}
+								/>
+								<div
+									className={`more-branding ${
+										showBranding && "active-branding"
+									}`}
+								>
+									<div className="active-branding-content">
+										<h4>Logo Design & Branding</h4>
+										<p>Simple and timeles. Let's make them remember you.</p>
+									</div>
 								</div>
 							</div>
-							<div className="card-service">
-								<div className="card-content">
+							<div className="card-service" onClick={openGraphicDesign}>
+								<div
+									className={`card-content ${
+										showGrahicDesign && "hide-content"
+									}`}
+								>
 									<div className="icon-circle gradient3">
 										<svg
 											className="mozda"
@@ -116,23 +130,23 @@ function MyServices() {
 
 									<h4>Graphic Design</h4>
 								</div>
-								<div className="see-more">
-									<svg
-										width="20"
-										height="20"
-										viewBox="0 0 20 20"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 9.99854H18M9.7037 17.9985L9.7037 1.99854"
-											stroke="black"
-											stroke-width="3"
-											stroke-linecap="round"
-										/>
-									</svg>
-
-									{/* <BiPlus name="about" className="more-info-icon" /> */}
+								<BiPlus
+									onClick={openGraphicDesign}
+									id={3}
+									className={`see-more ${showGrahicDesign && "active-more-ux"}`}
+								/>
+								<div
+									className={`more-design ${
+										showGrahicDesign && "active-design"
+									}`}
+								>
+									<div className="active-design-content">
+										<h4>Graphic Design</h4>
+										<p>
+											Attract audiences, enhance sales and build relationships
+											using my creative design.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>

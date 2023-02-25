@@ -187,7 +187,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			padding: 80px 0px;
+			//padding: 80px 0px;
 			isolation: isolate;
 			width: 364px;
 			height: 440px;
@@ -203,6 +203,10 @@
 				width: 220px;
 				height: 240px;
 
+				&.hide-content {
+					display: none;
+				}
+
 				h4 {
 					font-weight: 600;
 					text-align: center;
@@ -211,10 +215,6 @@
 				.logo-design-text {
 					width: 200px;
 				}
-				// .icon {
-				// 	width: 72px;
-				// 	height: 72px;
-				// }
 				.icon-circle {
 					width: 92px;
 					height: 92px;
@@ -247,20 +247,260 @@
 				}
 			}
 			.see-more {
-				display: flex;
-				flex-direction: row;
+				border-radius: 50px;
+				z-index: 1;
 				position: relative;
+				top: 70px;
 				left: 120px;
-				top: 65px;
-				justify-content: center;
-				align-items: center;
-				padding: 16px;
-				gap: 10px;
-				width: 48px;
-				height: 48px;
+				width: 40px;
+				height: 30px;
+				transition: 0.3s ease all;
 				background: #f8f8f8;
 				border-radius: 50px;
 				z-index: 1;
+
+				& .active-more-ux {
+					transform: rotate(45deg);
+				}
+			}
+
+			& .more-ux {
+				display: none;
+				transition: 3s ease all;
+				font-size: 18px;
+
+				&.active-ux {
+					display: flex;
+					flex-direction: column;
+					transition: 0.3s ease all;
+					border-radius: 20px;
+					position: relative;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background-color: $primary;
+					align-items: center;
+					justify-content: center;
+				}
+				.active-ux-content {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					padding: 0px;
+					gap: 24px;
+
+					width: 211px;
+					height: 212px;
+
+					/* Inside auto layout */
+
+					flex: none;
+					order: 0;
+					flex-grow: 0;
+					z-index: 0;
+
+					& h4 {
+						width: 177px;
+						height: 76px;
+
+						/* Heading 4/Semibold */
+
+						font-family: "Inter";
+						font-style: normal;
+						font-weight: 600;
+						font-size: 32px;
+						line-height: 38px;
+						/* or 119% */
+
+						display: flex;
+						align-items: center;
+						text-align: center;
+						letter-spacing: -0.03em;
+
+						color: #ffffff;
+						text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					}
+
+					& p {
+						width: 211px;
+						height: 112px;
+
+						/* Text lg/Regular */
+
+						font-family: "Inter";
+						font-style: normal;
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 28px;
+						/* or 156% */
+
+						display: flex;
+						align-items: center;
+						text-align: center;
+						letter-spacing: -0.02em;
+
+						/* Primary/10 */
+
+						color: #f4f8ff;
+					}
+				}
+			}
+
+			.more-branding {
+				display: none;
+				transition: 3s ease all;
+				font-size: 18px;
+
+				&.active-branding {
+					display: flex;
+					flex-direction: column;
+					transition: 0.3s ease all;
+					border-radius: 20px;
+					position: relative;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background-color: $primary;
+					align-items: center;
+					justify-content: center;
+				}
+				.active-branding-content {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					padding: 0px;
+					gap: 24px;
+
+					width: 183px;
+					height: 184px;
+
+					/* Inside auto layout */
+
+					flex: none;
+					order: 0;
+					flex-grow: 0;
+					z-index: 0;
+
+					& h4 {
+						width: 183px;
+						height: 76px;
+
+						/* Heading 4/Semibold */
+
+						font-family: "Inter";
+						font-style: normal;
+						font-weight: 600;
+						font-size: 32px;
+						line-height: 38px;
+						/* or 119% */
+
+						display: flex;
+						align-items: center;
+						text-align: center;
+						letter-spacing: -0.03em;
+
+						color: #ffffff;
+						text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					}
+
+					& p {
+						width: 168px;
+						height: 84px;
+
+						/* Text lg/Regular */
+
+						font-family: "Inter";
+						font-style: normal;
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 28px;
+						/* or 156% */
+
+						display: flex;
+						align-items: center;
+						text-align: center;
+						letter-spacing: -0.02em;
+
+						/* Primary/10 */
+
+						color: #f4f8ff;
+					}
+				}
+			}
+
+			.more-design {
+				display: none;
+				transition: 3s ease all;
+				font-size: 18px;
+
+				&.active-design {
+					display: flex !important;
+					flex-direction: column;
+					transition: 0.3s ease all;
+					border-radius: 20px;
+					position: relative;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background-color: $primary;
+					align-items: center;
+					justify-content: center;
+				}
+				.active-design-content {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					padding: 0px;
+					gap: 24px;
+
+					width: 262px;
+					height: 212px;
+
+					& h4 {
+						width: 116px;
+						height: 76px;
+
+						/* Heading 4/Semibold */
+
+						font-family: "Inter";
+						font-style: normal;
+						font-weight: 600;
+						font-size: 32px;
+						line-height: 38px;
+						/* or 119% */
+
+						display: flex;
+						align-items: center;
+						text-align: center;
+						letter-spacing: -0.03em;
+
+						color: #ffffff;
+						text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					}
+
+					& p {
+						width: 262px;
+						height: 112px;
+
+						/* Text lg/Regular */
+
+						font-family: "Inter";
+						font-style: normal;
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 28px;
+						/* or 156% */
+
+						display: flex;
+						align-items: center;
+						text-align: center;
+						letter-spacing: -0.02em;
+
+						/* Primary/10 */
+
+						color: #f4f8ff;
+					}
+				}
 			}
 		}
 	}
