@@ -4,11 +4,11 @@ import MyWork from "./components/myWork";
 import Social from "./components/Social";
 
 function Home(props) {
-	let { id } = props;
+	let { id, services } = props;
 	return (
 		<>
 			<Hero id={id} />
-			<MyServices />
+			<MyServices id={services} />
 			<MyWork />
 			<Social />
 		</>
