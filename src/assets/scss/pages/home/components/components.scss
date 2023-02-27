@@ -158,6 +158,8 @@
 	align-items: center;
 	width: 100%;
 	height: 816px;
+	gap: 10px;
+	isolation: isolate;
 
 	.services-content {
 		display: flex;
@@ -182,8 +184,15 @@
 		padding: 0px;
 		gap: 24px;
 
+		flex: none;
+		order: 1;
+		align-self: stretch;
+		flex-grow: 0;
+		z-index: 1;
+
 		.card-service {
 			display: flex;
+			position: relative;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -246,20 +255,32 @@
 					border: 12px solid #ecfdf3;
 				}
 			}
+			.plus {
+				display: flex;
+				position: absolute;
+				width: 100%;
+				align-items: flex-end;
+				justify-content: end;
+				border-radius: 1000px;
+				bottom: 32px;
+				right: 32px;
+				cursor: pointer;
+
+				//transition: 0.3s ease all;
+			}
 			.see-more {
-				border-radius: 50px;
+				display: flex;
+				border-radius: 50%;
 				z-index: 1;
-				position: relative;
-				top: 70px;
-				left: 120px;
+				position: absolute;
 				width: 40px;
-				height: 30px;
+				height: 40px;
 				transition: 0.3s ease all;
 				background: #f8f8f8;
-				border-radius: 50px;
-				z-index: 1;
+				border-radius: 1000px;
+				//z-index: 1;
 
-				& .active-more-ux {
+				&.active-more-ux {
 					transform: rotate(45deg);
 				}
 			}
