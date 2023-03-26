@@ -9,7 +9,7 @@ function Home(props) {
 		<>
 			<Hero id={id} />
 			<MyServices id={services} />
-			<MyWork />
+			{/* <MyWork /> */}
 			<Social />
 		</>
 	);
