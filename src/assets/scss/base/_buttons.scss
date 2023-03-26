@@ -1,80 +1,11 @@
-//.btn-primary {
-//	background-color: #b9ebfd;
-//	border: 2px solid $black;
-//	border-radius: 16px;
-//	padding: 20px 32px 20px 32px;
-//	color: $black;
-//	outline: none;
-//
-//	&:hover {
-//		color: $white;
-//		background-color: $black;
-//		transition: 0.4s ease all;
-//		border: none;
-//		border: 2px solid $black;
-//	}
-//
-//	&:focus {
-//		background-color: $black;
-//		box-shadow: none;
-//		color: $white;
-//		border-color: $black;
-//		outline: none;
-//	}
-//}
-//
-//.btn-footer {
-//	@extend .btn-primary;
-//
-//	&:hover {
-//		color: $white;
-//		background-color: $black;
-//		transition: 0.4s ease all;
-//		border: none;
-//		border: 2px solid $primary;
-//	}
-//
-//	&:focus {
-//		background-color: $black;
-//		box-shadow: none;
-//		color: $white;
-//		border-color: $primary;
-//		outline: none;
-//	}
-//}
-//
-//.badge {
-//	font-weight: 600;
-//}
-//.sendBtn {
-//	background-color: $black;
-//	color: $white;
-//
-//	&:hover {
-//		color: $black;
-//		background-color: $primary;
-//		transition: 0.4s ease all;
-//		border: none;
-//		border: 2px solid $black;
-//	}
-//}
-//.downloadBtn {
-//	background-color: $background;
-//	color: $black;
-//
-//	&:hover {
-//		color: $white;
-//		background-color: $black;
-//		transition: 0.4s ease all;
-//		border: none;
-//		border: 2px solid $black;
-//	}
-//}
 .btn {
   padding: 12px 20px;
   background-color: $primary;
   border-radius: 8px;
   border: none;
+  gap: 8px;
+  height: 48px;
+
 
   &:focus {
     box-shadow: none;
@@ -123,6 +54,23 @@
       background-color: $primary-light;
     }
   }
-
-
 }
+
+.MuiMobileStepper-dot {
+  margin-right: 10px !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #D5D5D5;
+  margin-right: 12px;
+  border-radius: 8px;
+
+  &.filled {
+    background-color: $primary;
+  }
+}
+

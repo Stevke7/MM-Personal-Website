@@ -1,0 +1,104 @@
+
+form {
+
+  .form-control {
+    width: 480px;
+    padding: 18px;
+    border: 1.5px solid #D8E7FF;
+    background: #F4F8FF;
+    border-radius: 16px;
+
+    &:hover {
+      border: 1.5px solid $primary;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .form-check {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    background: #F4F8FF;
+    flex-flow: row-reverse;
+    border: 1.5px solid #D8E7FF;
+    border-radius: 16px;
+    padding: 18px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      border: 1.5px solid $primary;
+    }
+
+
+    & label {
+      font-weight: 400;
+      font-size: 16px;
+      height: 24px;
+      line-height: 24px;
+      cursor: pointer;
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+    }
+
+    & input[type="checkbox"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      padding: 6px;
+      background-clip: content-box;
+      border: 2px solid #bbbbbb;
+      background-color: #e7e6e7;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    & input[type="checkbox"]:checked {
+      background-image: none;
+      background-color: $primary;
+      border: 2px solid $primary
+    }
+
+
+  }
+
+  // add class to the parent when radio button is checked
+  *:has(> input[type="checkbox"]:checked) {
+    border: 2px solid $primary
+  }
+
+
+}
+
+.MuiBox-root {
+  @extend .form-control;
+
+  & input {
+    width: 100%;
+    border: none;
+    background: none;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+}
+

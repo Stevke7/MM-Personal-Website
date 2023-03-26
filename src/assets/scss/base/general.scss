@@ -26,6 +26,10 @@ body {
   width: fit-content;
 }
 
+.border-bt-none {
+  border-bottom: none;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -94,4 +98,10 @@ body {
 
 .m-top {
   margin-top: 12rem;
+}
+
+.modal-content {
+  width: 982px;
+  height: 662px;
+  border-radius: 16px;
 }

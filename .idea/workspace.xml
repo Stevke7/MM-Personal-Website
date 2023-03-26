@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8b49697f-028c-4758-b353-381630052f6e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/base/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/base/_buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/base/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/base/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/base/general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/base/general.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/pages/home/components/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/pages/home/components/components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/style.react.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/style.react.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/components/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/Hero.js" afterDir="false" />
     </list>
@@ -45,7 +47,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nikolaj15/Desktop/projekti/Sajtovi/Misko/public/icons&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nikolaj15/Desktop/projekti/Sajtovi/Misko/src/pages/contact&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -56,11 +58,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/contact" />
       <recent name="$PROJECT_DIR$/public/icons" />
       <recent name="$PROJECT_DIR$/src/assets/scss/pages/hero" />
       <recent name="$PROJECT_DIR$/src/pages/home" />
       <recent name="$PROJECT_DIR$/src/pages/home/components" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/scss" />
@@ -104,6 +106,15 @@
       <workItem from="1663502685803" duration="703000" />
       <workItem from="1669648061539" duration="2873000" />
       <workItem from="1669982589024" duration="8337000" />
+      <workItem from="1670156632775" duration="1212000" />
+      <workItem from="1670189332395" duration="7444000" />
+      <workItem from="1670247061004" duration="7419000" />
+      <workItem from="1670319818096" duration="11754000" />
+      <workItem from="1670357278415" duration="6512000" />
+      <workItem from="1670510527384" duration="1503000" />
+      <workItem from="1671365278315" duration="5545000" />
+      <workItem from="1671792454161" duration="11180000" />
+      <workItem from="1671901901034" duration="14616000" />
     </task>
     <servers />
   </component>
