@@ -1,15 +1,15 @@
 import Hero from "./components/Hero";
 import MyServices from "./components/MyServices";
-import MyWork from "./components/myWork";
 import Social from "./components/Social";
+import WorkSection from "./components/WorkSection";
 
 function Home(props) {
-	let { id, services } = props;
+	let { id, services, work } = props;
 	return (
 		<>
 			<Hero id={id} />
 			<MyServices id={services} />
-			{/* <MyWork /> */}
+			<WorkSection id={work} />
 			<Social />
 		</>
 	);
