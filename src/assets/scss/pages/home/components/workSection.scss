@@ -12,11 +12,11 @@
 	background-size: cover;
 	background-position: center;
 	border-radius: 16px;
+	cursor: default !important;
 }
 .card-body {
 	width: 131px;
 	height: 112px;
-
 	padding-left: 40px;
 
 	.card-title {
@@ -47,7 +47,7 @@
 	border-radius: 1000px;
 	display: flex;
 	position: absolute;
-
+	cursor: pointer;
 	bottom: 40px;
 	left: 40px;
 }
