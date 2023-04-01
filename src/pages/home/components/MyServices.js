@@ -1,4 +1,3 @@
-import { Col, Container, Image, Row } from "react-bootstrap";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { BiPlus } from "react-icons/bi";
