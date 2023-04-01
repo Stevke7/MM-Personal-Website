@@ -53,9 +53,53 @@ function ModalOverlay({ showModal, handleCloseModal, title, content }) {
 					)}
 					{content === "Content for Trekker modal" && (
 						<div>
+							<div className="helpers">
+								<ProgressBar
+									now={scrollPercentage}
+									label={`${Math.round(scrollPercentage)}%`}
+									className="progress-bar"
+								/>
+								<BiPlus onClick={handleCloseModal} className="plusic" />
+							</div>
 							<h3>Trekker Modal</h3>
 							<p>Description of Trekker modal</p>
 							<img src="/images/Desktop/trekker-cover.png" alt="Trekker" />
+						</div>
+					)}
+					{content === "Content for Ecco Energy modal" && (
+						<div>
+							<div className="helpers">
+								<ProgressBar
+									now={scrollPercentage}
+									label={`${Math.round(scrollPercentage)}%`}
+									className="progress-bar"
+								/>
+								<BiPlus onClick={handleCloseModal} className="plusic" />
+							</div>
+							<h3>Ecco Energy Modal</h3>
+							<p>Description of Ecco Energy modal</p>
+							<img
+								src="/images/Desktop/ecoenergy-cover.png"
+								alt="Ecco Energy"
+							/>
+						</div>
+					)}
+					{content === "Content for Mindful Sould modal" && (
+						<div>
+							<div className="helpers">
+								<ProgressBar
+									now={scrollPercentage}
+									label={`${Math.round(scrollPercentage)}%`}
+									className="progress-bar"
+								/>
+								<BiPlus onClick={handleCloseModal} className="plusic" />
+							</div>
+							<h3>Mindful Sould Modal</h3>
+							<p>Description of Mindful Sould modal</p>
+							<img
+								src="/images/Desktop/mindfulsouls-cover.png"
+								alt="Mindful Sould"
+							/>
 						</div>
 					)}
 				</Modal.Body>
