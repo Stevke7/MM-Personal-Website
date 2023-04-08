@@ -1,18 +1,12 @@
 .modal .modal-content {
 	background-color: black;
 	color: white;
-	overflow-x: scroll;
-	overflow-y: hidden;
 }
-.body .modal-body {
-	display: flex;
-	flex-direction: row;
-}
-.modal-header {
-	border-bottom: none !important;
-	margin-top: 20px !important;
-	margin-bottom: 25px !important;
-}
+// .modal-header {
+// 	border-bottom: none !important;
+// 	margin-top: 20px !important;
+// 	margin-bottom: 25px !important;
+// }
 .btn-close {
 	background-color: #fff;
 	width: 25px;
@@ -24,45 +18,214 @@
 	background-color: #fff;
 }
 
-.helpers {
-	position: absolute;
+.main-div {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	width: 552px;
-	height: 48px;
-	gap: 24px;
-	left: 44px;
-	top: 44px;
+	align-items: flex-start;
+	padding: 0px;
 
-	.progress-bar {
-		width: 480px;
-		height: 3.33px;
-		background: #c2c2c2;
+	position: relative;
+	width: 6016px;
+	height: 100%;
+
+	.cover {
+		background-image: url("../../../../../../public/images/bornToRunCroped.png");
+		background-size: cover;
+		width: 640px;
+		height: 100%;
 		opacity: 0.5;
-		border-radius: 83.3333px;
+
+		.helpers {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			width: 552px;
+			height: 48px;
+			gap: 24px;
+			margin-left: 44px;
+			margin-top: 24px;
+
+			.progress-bar {
+				width: 480px;
+				height: 3.33px;
+				background: white;
+				opacity: 0.5;
+				border-radius: 83.3333px;
+			}
+			.plusic {
+				width: 48px;
+				height: 48px;
+				border-radius: 50%;
+				background: white;
+				color: black;
+				rotate: 45deg;
+				cursor: pointer;
+			}
+		}
 	}
-	.plusic {
-		width: 48px;
-		height: 48px;
-		border-radius: 50%;
-		background: #c4c4c4;
-		rotate: 45deg;
-		cursor: pointer;
+
+	p {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		/* or 140% */
+
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.02em;
+		font-feature-settings: "cv11" on;
+
+		color: rgba(255, 255, 255, 0.7);
 	}
-}
-.cheetah {
-	background-image: url("../../../../../../public/images/bornToRun.png");
-	background-size: contain;
-	width: 640px;
-	height: 95vh;
-}
-.contents {
-	width: 320px;
-	height: 95vh;
-	margin-left: 128px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+
+	.contents {
+		height: 100%;
+
+		width: 5376px;
+		//height: 900px;
+
+		/* Inside auto layout */
+
+		flex: none;
+		order: 1;
+		flex-grow: 0;
+
+		.screen-1 {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 0px;
+			gap: 128px;
+
+			position: relative;
+			width: 1248px;
+			height: 512.67px;
+			left: 128px;
+			top: 145px;
+
+			.frame-1 {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				padding: 0px;
+				gap: 32px;
+
+				width: 480px;
+				height: 316px;
+
+				h1 {
+					font-family: "Inter";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 64px;
+					line-height: 72px;
+					/* or 112% */
+
+					display: flex;
+					align-items: center;
+					letter-spacing: -0.03em;
+					font-feature-settings: "cv11" on;
+
+					background: linear-gradient(
+						90.89deg,
+						#eda215 -7.29%,
+						#da7619 113.76%
+					);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+					text-fill-color: transparent;
+				}
+				// p {
+				// 	font-family: "Inter";
+				// 	font-style: normal;
+				// 	font-weight: 400;
+				// 	font-size: 20px;
+				// 	line-height: 28px;
+				// 	/* or 140% */
+
+				// 	display: flex;
+				// 	align-items: center;
+				// 	letter-spacing: -0.02em;
+				// 	font-feature-settings: "cv11" on;
+
+				// 	color: rgba(255, 255, 255, 0.7);
+				// }
+			}
+			.frame-2 {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				padding: 0px;
+				gap: 64px;
+
+				width: 640px;
+				height: 512.67px;
+				// p {
+				// 	ont-style: normal;
+				// 	font-weight: 400;
+				// 	font-size: 20px;
+				// 	line-height: 28px;
+				// 	/* or 140% */
+
+				// 	display: flex;
+				// 	align-items: center;
+				// 	letter-spacing: -0.02em;
+				// 	font-feature-settings: "cv11" on;
+
+				// 	color: rgba(255, 255, 255, 0.7);
+				// }
+				.image {
+					background-image: url("../../../../../../public/images/cheetah2.png");
+					width: 640px;
+					height: 336px;
+					background-size: cover;
+				}
+			}
+		}
+		.screen-2 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px;
+			gap: 40px;
+
+			position: relative;
+			width: 752px;
+			height: 512px;
+			left: 1500px;
+			top: 140px;
+
+			.images-row {
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				padding: 0px;
+				gap: 16px;
+
+				width: 752px;
+				height: 336px;
+				.image1 {
+					width: 240px;
+					height: 336px;
+					background-image: url("../../../../../../public/images/cheetah.png");
+					background-size: cover;
+				}
+				.image2 {
+					width: 240px;
+					height: 336px;
+					background-image: url("../../../../../../public/images/cheetah.png");
+					background-size: cover;
+				}
+				.image3 {
+					width: 240px;
+					height: 336px;
+					background-image: url("../../../../../../public/images/cheetah.png");
+					background-size: cover;
+				}
+			}
+		}
+	}
 }
