@@ -43,12 +43,10 @@ function WorkSection() {
 
 	const handleCloseModal = () => {
 		setShowModal(false);
-		console.log("ZATVORENOOO");
 	};
 	const handleOpenModal = (content) => {
 		setShowModal(true);
 		setModalContent(content);
-		console.log("SEZAME OPEN");
 	};
 
 	return (

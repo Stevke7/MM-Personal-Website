@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { BiPlus } from "react-icons/bi";
+import { TbPlus } from "react-icons/tb";
 
 function MyServices() {
 	let [showUX, setShowUx] = useState(false);
@@ -48,7 +48,7 @@ function MyServices() {
 									<h4>UI/UX & Web Design</h4>
 								</div>
 								<div className="plus">
-									<BiPlus
+									<TbPlus
 										onClick={openUx}
 										id={1}
 										className={`see-more ${showUX && "active-more-ux"}`}
@@ -90,7 +90,7 @@ function MyServices() {
 									<h4 className="logo-design-text">Logo Design & Branding</h4>
 								</div>
 								<div className="plus">
-									<BiPlus
+									<TbPlus
 										onClick={openBranding}
 										id={2}
 										className={`see-more ${showBranding && "active-more-ux"}`}
@@ -135,7 +135,7 @@ function MyServices() {
 									<h4>Graphic Design</h4>
 								</div>
 								<div className="plus">
-									<BiPlus
+									<TbPlus
 										onClick={openGraphicDesign}
 										id={3}
 										className={`see-more ${
