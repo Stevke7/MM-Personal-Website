@@ -71,7 +71,30 @@ form {
       }
     }
 
+    & input[type="radio"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      padding: 6px;
+      background-clip: content-box;
+      border: 2px solid #bbbbbb;
+      background-color: #e7e6e7;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
     & input[type="checkbox"]:checked {
+      background-image: none;
+      background-color: $primary;
+      border: 2px solid $primary
+    }
+    & input[type="radio"]:checked {
       background-image: none;
       background-color: $primary;
       border: 2px solid $primary
@@ -82,6 +105,9 @@ form {
 
   // add class to the parent when radio button is checked
   *:has(> input[type="checkbox"]:checked) {
+    border: 2px solid $primary
+  }
+  *:has(> input[type="radio"]:checked) {
     border: 2px solid $primary
   }
 

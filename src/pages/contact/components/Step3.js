@@ -1,6 +1,8 @@
 import {Form, Modal} from "react-bootstrap";
+import {useState} from "react";
 
-export function Step3({checkboxHandler, data, nextStep,}) {
+export function Step3({radioHandler, data, nextStep,}) {
+
 
     return (
         <>
@@ -11,35 +13,33 @@ export function Step3({checkboxHandler, data, nextStep,}) {
                     for your project?</h4>
                 <Form className="my-5">
                     <Form.Check
-                        onChange={checkboxHandler}
-                        defaultChecked={data.min}
+                        onClick={radioHandler}
+                        checked={data.minBudget}
                         id='Web / UI Design'
-                        name="min"
-                        type="checkbox"
+                        name="minBudget"
+                        type="radio"
                         label="€0 - €5,000"
                         className="cursor-pointer"
                     />
                     <Form.Check
-                        onChange={checkboxHandler}
-                        defaultChecked={data.middle}
+                        onChange={radioHandler}
+                        checked={data.middleBudget}
                         id='Logo Design / Branding'
-                        name="middle"
-                        type="checkbox"
+                        name="middleBudget"
+                        type="radio"
                         label="€5,000 - €10,000"
                         className="cursor-pointer my-3"
                     />
                     <Form.Check
-                        onChange={checkboxHandler}
-                        defaultChecked={data.max}
+                        onChange={radioHandler}
+                        checked={data.maxBudget}
                         id='Graphic Design'
-                        name="max"
-                        type="checkbox"
+                        name="maxBudget"
+                        type="radio"
                         label="€10,000 >"
                         className="cursor-pointer"
                     />
                 </Form>
-                <button onClick={nextStep} className="btn text-white mt-5">Next
-                </button>
             </div>
 
         </>

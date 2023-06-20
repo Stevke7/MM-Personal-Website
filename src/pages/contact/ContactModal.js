@@ -1,108 +1,96 @@
-import {Modal} from "react-bootstrap";
-import {useCallback, useState} from "react";
+import { Modal } from "react-bootstrap";
+import { useContext } from "react";
 import RequestProject from "./components/RequestProject";
-import {IoIosArrowBack} from "@react-icons/all-files/io/IoIosArrowBack";
+import { IoIosArrowBack } from "@react-icons/all-files/io/IoIosArrowBack";
 import StepperDots from "../../shared/StepperDots";
-import {Step1} from "./components/Step1";
-import {Step2} from "./components/Step2";
-import {Step3} from "./components/Step3";
-import {Step4} from "./components/Step4";
-
+import { Step1 } from "./components/Step1";
+import { Step2 } from "./components/Step2";
+import { Step3 } from "./components/Step3";
+import { Step4 } from "./components/Step4";
+import { ContactModalContext } from "./ContactModalContext";
+import {useMultistepForm} from "../../shared/MultistepForm";
+import {Step5} from "./components/Step5";
+import {Step6} from "./components/Step6";
 
 export function ContactModal(props) {
-    const [step, setStep] = useState(0)
-    let stepArray = [1, 2, 3, 4, 5, 6]
-    let [data, setData] = useState({
-        webDesign: false,
-        logoDesign: false,
-        graphicDesign: false,
-        start: new Date(),
-        end: '',
-        min: false,
-        middle: false,
-        max: false,
-        name: '',
-        companyName: '',
-        website: '',
-        ProjectDescription: '',
-        firstName: '',
-        lastName: '',
-        email: ''
-    });
+    const { data, setData } = useContext(ContactModalContext);
+    const {currentStepIndex, back, next,step , isLastStep} = useMultistepForm([
+        <RequestProject/>,
+        <Step1 checkboxHandler={checkboxHandler} data={data}/>,
+        <Step2 handleChangeTimepicker={handleChangeTimepicker} data={data}/>,
+        <Step3 radioHandler={handleRadioChange} data={data}/>,
+        <Step4 inputHandler={inputHandler} data={data}/>,
+        <Step5 inputHandler={inputHandler} data={data}></Step5>,
+        <Step6 inputHandler={inputHandler} data={data}></Step6>
+    ])
+    const stepArray = [ 1, 2, 3, 4, 5, 6];
 
-
-    const handleNextStep = () => {
-        const nextStep = step + 1;
-        if (step === 1) {
-            let checked = document.querySelectorAll('input[type=checkbox]:checked').length
-            if (!checked) {
-                alert("You must check at least one checkbox.")
-            } else {
-                setStep(nextStep)
-            }
-        } else {
-            setStep(nextStep)
-        }
-    }
-    const handleBackStep = () => {
-        const back = step - 1;
-        setStep(back)
-    }
-    const inputHandler = (event) => {
-        
-        setData({
-            ...data,
-            [event.target.name]: event.target.value
-        })
-    }
-
-    const checkboxHandler = (event) => {
-        let savedData;
-        savedData = {
-            ...data,
-            [event.target.name]: event.target.checked,
-        };
-        setData(savedData)
-
+    function inputHandler (event)  {
+        event.preventDefault();
+        setData((prevState) => ({
+            ...prevState,
+            [event.target.name]: event.target.value,
+        }));
     };
 
-    const handleChangeTimepicker = (newValue, name) => {
+    function checkboxHandler  (event)  {
+        setData((prevState) => ({
+            ...prevState,
+            [event.target.name]: event.target.checked,
+        }));
+
+
+    };
+    function handleRadioChange(event) {
+        const { name } = event.target;
+        const updatedData = {
+            ...data,
+            minBudget: name === "minBudget",
+            middleBudget: name === "middleBudget",
+            maxBudget: name === "maxBudget",
+        };
+        setData(updatedData);
+    }
+    function handleChangeTimepicker  (newValue, name)  {
         setData({...data, [name]: new Date(newValue)});
     };
 
-    const steps = {
-        0: <RequestProject nextStep={handleNextStep} onHide={props.onHide} step={step} setStep={setStep}/>,
-        1: <Step1 checkboxHandler={checkboxHandler} nextStep={handleNextStep} data={data}/>,
-        2: <Step2 handleChangeTimepicker={handleChangeTimepicker} data={data} nextStep={handleNextStep}/>,
-        3: <Step3 checkboxHandler={checkboxHandler} nextStep={handleNextStep} data={data}/>,
-        4: <Step4 inputHandler={inputHandler} nextStep={handleNextStep} data={data}></Step4>
-    }
-
-    const CurrentStep = useCallback(() => {
-        return steps[step];
-    }, [step, JSON.stringify(data)]);
-
     return (
         <Modal
-
             {...props}
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
+            className="modal"
         >
-            {step > 0 &&
+            {currentStepIndex > 0 && (
                 <Modal.Header className="d-flex justify-content-between align-items-center border-bt-none w-100  px-5">
-                    <p onClick={handleBackStep} className='text-md m-0 cursor-pointer text-primary'><IoIosArrowBack/>Back
+                    <p
+                        onClick={back}
+                        className="text-md m-0 cursor-pointer text-primary"
+                    >
+                        <IoIosArrowBack />
+                        Back
                     </p>
-                    <StepperDots stepArray={stepArray} step={step}/>
-                    <p onClick={props.onHide} className='text-md m-0 cursor-pointer text-primary'>Close</p>
+                    <StepperDots stepArray={stepArray} step={currentStepIndex} />
+                    <p
+                        onClick={props.onHide}
+                        className="text-md m-0 cursor-pointer text-primary"
+                    >
+                        Close
+                    </p>
                 </Modal.Header>
-            }
+            )}
             <Modal.Body>
-                <CurrentStep/>
+                    {step}
             </Modal.Body>
+            <Modal.Footer >
+                <div className="w-100 d-flex justify-content-center">
+                    {!isLastStep ? <button type="submit" onClick={next} className="btn text-white ">Next
+                    </button> : <button type="submit" className="btn text-white ">Send</button>}
+                </div>
+            </Modal.Footer>
+
         </Modal>
-
-    )
+    );
 }
-

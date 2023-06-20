@@ -37,8 +37,6 @@ export function Step1({checkboxHandler, data, nextStep,}) {
                         className="cursor-pointer"
                     />
                 </Form>
-                <button onClick={nextStep} className="btn text-white mt-5">Next
-                </button>
             </div>
 
         </>

@@ -1,15 +1,6 @@
-import {
-    Button,
-    Col,
-    Container,
-    Form,
-    Image,
-    Nav,
-    Offcanvas,
-    Row,
-} from "react-bootstrap";
-import {NavLink, useLocation} from "react-router-dom";
-import {useEffect, useState} from "react";
+import {Col, Container, Image, Offcanvas, Row,} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
+import {useState} from "react";
 import {useMediaQuery} from "react-responsive";
 import {AiOutlineArrowRight} from "react-icons/ai";
 import {ContactModal} from "../pages/contact/ContactModal";
@@ -33,7 +24,7 @@ function Header(props) {
 
     return (
         <>
-            <ContactModal show={modalShow} onHide={() => setModalShow(false)}/>
+            <ContactModal  show={modalShow} onHide={() => setModalShow(false)}/>
             <div>
                 {!isMobile && (
                     <Container className="px-5">

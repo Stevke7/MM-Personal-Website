@@ -1,7 +1,7 @@
 import {Image, Modal} from "react-bootstrap";
 import {AiOutlineArrowRight} from "react-icons/ai";
 
-function RequestProject({nextStep, onHide}) {
+function RequestProject({nextStep}) {
 
 
     return (
@@ -16,8 +16,6 @@ function RequestProject({nextStep, onHide}) {
                         Please be as accurate as possible with your
                         information, as it saves us both time.
                     </p>
-                    <button onClick={nextStep} className="btn text-white my-5">Start <AiOutlineArrowRight/>
-                    </button>
                     <p className="text-gray text-sm"> Hate forms? Contact me at info@milosmiljanovic.com</p>
                 </div>
             }

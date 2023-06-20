@@ -5,8 +5,8 @@ import React, {createContext, useState} from "react";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import SiteRoutes from "./routes/Routes";
-// import "react-datepicker/dist/react-datepicker.css";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import {ContactModalProvider} from "./pages/contact/ContactModalContext";
+
 
 export const ThemeContext = createContext(null);
 
@@ -17,11 +17,13 @@ function App() {
         <div>
             <BrowserRouter>
                 <ThemeContext.Provider value={{theme}}>
+                    <ContactModalProvider>
                     <div id={theme}>
                         <Header id={theme} setTheme={setTheme}/>
                         <SiteRoutes id={theme}/>
                         <Footer/>
                     </div>
+                    </ContactModalProvider>
                 </ThemeContext.Provider>
             </BrowserRouter>
         </div>

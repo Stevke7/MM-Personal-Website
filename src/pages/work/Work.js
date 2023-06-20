@@ -1,6 +1,5 @@
 import {Col, Container, Row, Card, Image} from "react-bootstrap";
 import {useMediaQuery} from "react-responsive";
-import {useHistory, useLocation} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
 
 

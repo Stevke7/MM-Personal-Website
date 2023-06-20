@@ -5,8 +5,6 @@ import {AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs";
 
 
 export function Step2({handleChangeTimepicker, data, nextStep,}) {
-    console.log(data.start)
-
     return (
         <>
             <div className="d-flex flex-column align-items-center justify-content-center h-100">
@@ -50,8 +48,6 @@ export function Step2({handleChangeTimepicker, data, nextStep,}) {
                         </LocalizationProvider>
                     </div>
                 </Form>
-                <button onClick={nextStep} className="btn text-white mt-5">Next
-                </button>
             </div>
         </>
 

@@ -24,6 +24,12 @@
 	margin-bottom: 25px;
 	margin-top: 30px;
 }
+.modal{
+	.modal-footer{
+		border-top: none;
+	}
+}
+
 @media (max-width: 520px) {
 	.contactForm {
 		margin-bottom: 20px;
