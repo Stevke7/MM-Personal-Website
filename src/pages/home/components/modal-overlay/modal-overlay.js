@@ -15,7 +15,7 @@ function ModalOverlay({ showModal, handleCloseModal, title, content }) {
 	return (
 		<>
 			<Modal
-				className="modal"
+				className="modal project-overlay"
 				fullscreen
 				show={showModal}
 				onHide={handleCloseModal}
