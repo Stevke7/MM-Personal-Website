@@ -25,6 +25,10 @@ body {
 	width: fit-content;
 }
 
+.border-bt-none {
+  border-bottom: none;
+}
+
 .cursor-pointer {
 	cursor: pointer;
 }
@@ -91,5 +95,32 @@ body {
 }
 
 .m-top {
-	margin-top: 12rem;
+  margin-top: 12rem;
+}
+
+
+.border-none {
+  border: none
+}
+
+.border-radius-16 {
+  border-radius: 16px;
+}
+.Toastify__toast{
+  border-radius: 16px!important;
+}
+.success-toast{
+  width: 420px;
+  height: 240px;
+  padding: 48px 16px;
+  .Toastify__toast-body{
+    display: flex;
+    flex-direction: column;
+    .Toastify__toast-icon{
+      display: none;
+    }
+  }
+  .Toastify__close-button{
+    display: none;
+  }
 }
