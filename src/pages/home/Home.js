@@ -1,18 +1,18 @@
 import Hero from "./components/Hero";
-import MyWork from "./components/myWork";
+import MyServices from "./components/MyServices";
 import Social from "./components/Social";
-
+import WorkSection from "./components/WorkSection";
 
 function Home(props) {
-    let {id} = props
-    return (
-        <>
-            <Hero id={id}/>
-            <MyWork/>
-            <Social/>
-        </>
-    )
+	let { id, services, work } = props;
+	return (
+		<>
+			<Hero id={id} />
+			<MyServices id={services} />
+			<WorkSection id={work} />
+			<Social />
+		</>
+	);
 }
 
-export default Home
-
+export default Home;
