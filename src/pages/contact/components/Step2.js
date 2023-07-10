@@ -1,4 +1,4 @@
-import {Form, Modal} from "react-bootstrap";
+import {Form} from "react-bootstrap";
 import Box from '@mui/material/Box';
 import {DatePicker, LocalizationProvider} from "@mui/x-date-pickers";
 import {AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs";
@@ -7,10 +7,10 @@ import {AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs";
 export function Step2({handleChangeTimepicker, data, nextStep,}) {
     return (
         <>
-            <div className="d-flex flex-column align-items-center justify-content-center h-100">
-                <h4 className="mb-3 w-25 text-center">Do you have
+            <div className="d-flex flex-column align-items-center justify-content-center  max-height-385 ">
+                <h4 className="mb-3 text-center">Do you have
                     a timeline?</h4>
-                <Form className="my-5">
+                {/*<Form className="mt-5">*/}
                     <div>
                         <Form.Label>Start <span className='text-gray'>(optional)</span></Form.Label>
                         <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -47,7 +47,7 @@ export function Step2({handleChangeTimepicker, data, nextStep,}) {
                             />
                         </LocalizationProvider>
                     </div>
-                </Form>
+                {/*</Form>*/}
             </div>
         </>
 

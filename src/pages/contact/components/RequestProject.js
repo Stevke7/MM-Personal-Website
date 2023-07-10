@@ -1,5 +1,4 @@
 import {Image, Modal} from "react-bootstrap";
-import {AiOutlineArrowRight} from "react-icons/ai";
 
 function RequestProject({nextStep}) {
 
@@ -16,7 +15,7 @@ function RequestProject({nextStep}) {
                         Please be as accurate as possible with your
                         information, as it saves us both time.
                     </p>
-                    <p className="text-gray text-sm"> Hate forms? Contact me at info@milosmiljanovic.com</p>
+
                 </div>
             }
             </Modal.Body>

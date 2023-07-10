@@ -14,17 +14,18 @@ function Header(props) {
         work: "work",
         contact: "contact",
     };
-
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const [modalShow, setModalShow] = useState(false);
 
+    function closeModal() {
+        setModalShow(false)
+    }
 
     return (
         <>
-            <ContactModal  show={modalShow} onHide={() => setModalShow(false)}/>
+            <ContactModal setModalShow={setModalShow} show={modalShow} onHide={closeModal}/>
             <div>
                 {!isMobile && (
                     <Container className="px-5">

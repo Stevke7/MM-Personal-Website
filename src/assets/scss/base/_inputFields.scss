@@ -128,3 +128,9 @@ form {
   }
 }
 
+@media (max-width: 560px) {
+
+  .form-check{
+    width: 100% !important;
+  }
+}

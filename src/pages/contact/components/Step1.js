@@ -1,14 +1,12 @@
-import {Form, Modal} from "react-bootstrap";
+import {Form} from "react-bootstrap";
 
 export function Step1({checkboxHandler, data, nextStep,}) {
 
     return (
         <>
-
-            <div className="d-flex flex-column align-items-center justify-content-center h-100">
-                <h4 className="mb-3 w-50 text-center">Which service
-                    do you need?</h4>
-                <Form className="my-5">
+            <div className="d-flex flex-column align-items-center justify-content-centerc">
+                <h4 className="mb-3  text-center">Which service
+                    <br/>do you need?</h4>
                     <Form.Check
                         onChange={checkboxHandler}
                         defaultChecked={data.webDesign}
@@ -36,7 +34,6 @@ export function Step1({checkboxHandler, data, nextStep,}) {
                         label="Graphic Design"
                         className="cursor-pointer"
                     />
-                </Form>
             </div>
 
         </>

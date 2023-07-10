@@ -1,17 +1,14 @@
-import {Form, Modal} from "react-bootstrap";
-import {useState} from "react";
+import {Form} from "react-bootstrap";
 
 export function Step3({radioHandler, data, nextStep,}) {
 
 
     return (
         <>
-
-
-            <div className="d-flex flex-column align-items-center justify-content-center h-100">
-                <h4 className="mb-3 w-50 text-center">What’s the budget
+            <div className="d-flex flex-column align-items-center justify-content-center  max-height-385 ">
+                <h4 className="mb-3 text-center">What’s the budget
                     for your project?</h4>
-                <Form className="my-5">
+                {/*<Form className="mt-5">*/}
                     <Form.Check
                         onClick={radioHandler}
                         checked={data.minBudget}
@@ -39,7 +36,7 @@ export function Step3({radioHandler, data, nextStep,}) {
                         label="€10,000 >"
                         className="cursor-pointer"
                     />
-                </Form>
+                {/*</Form>*/}
             </div>
 
         </>

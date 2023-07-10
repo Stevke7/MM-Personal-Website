@@ -1,40 +1,68 @@
 .contactForm {
-	background-color: #e0eaf4;
-	border-radius: 24px;
-	padding-left: 30px;
-	padding-right: 30px;
-	height: 100%;
+  background-color: #e0eaf4;
+  border-radius: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
 }
+
 .details {
-	background-color: #e0eaf4;
-	height: 100%;
-	border-radius: 24px;
-	padding-left: 30px;
-	padding-top: 12px;
+  background-color: #e0eaf4;
+  height: 100%;
+  border-radius: 24px;
+  padding-left: 30px;
+  padding-top: 12px;
 }
 
 .containerContact {
-	margin-bottom: 150px;
+  margin-bottom: 150px;
 }
+
 .sendBtn {
-	margin-bottom: 25px;
-	margin-top: 30px;
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
+
 .downloadBtn {
-	margin-bottom: 25px;
-	margin-top: 30px;
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
-.modal{
-	.modal-footer{
-		border-top: none;
-	}
+
+.modal {
+  padding-left: 0px !important;
+  .modal-content {
+    width: 100%;
+    min-height: 600px;
+    border-radius: 16px;
+
+    .modal-header{
+      padding: 16px 48px;
+    }
+
+    .modal-body {
+      padding-top: 0px;
+
+      form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 470px;
+
+      }
+    }
+
+    .modal-footer {
+      border-top: none;
+      padding: 16px 48px;
+    }
+  }
 }
 
 @media (max-width: 520px) {
-	.contactForm {
-		margin-bottom: 20px;
-	}
-	.sendBtn {
-		margin-bottom: 25px;
-	}
+  .contactForm {
+    margin-bottom: 20px;
+  }
+  .sendBtn {
+    margin-bottom: 25px;
+  }
 }
