@@ -104,9 +104,7 @@ function ModalOverlay({ showModal, handleCloseModal, title, content }) {
 									<div className="section-6-image-row"></div>
 								</div>
 								<div className="section-7">
-									<div className="section-7-top-row">
-										<div className="top-image-7"></div>
-									</div>
+									<div className="section-7-top-row"></div>
 									<div className="section-7-bottom-row">
 										<div className="image-left"></div>
 										<div className="image-right"></div>
