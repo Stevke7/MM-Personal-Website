@@ -1,55 +1,84 @@
 .project-overlay {
-	background-color: black !important;
-	color: white;
-	.modal-content{
+	.modal-content {
 		background-color: black;
+		border-radius: 0px !important;
+		color: $white;
+
 		.btn-close {
 			background-color: #fff;
 			width: 25px;
 			height: 21px;
-			border-radius: 50%;
 			margin-right: 25px !important;
 		}
+
 		.btn-close::before {
 			background-color: #fff;
 		}
 
-		.main-div {
-			display: flex;
-			flex-direction: row;
-			align-items: flex-start;
-			padding: 0px;
-
+		.scroller-container {
 			position: relative;
-			//width: 6016px;
-			height: 100vh;
+			display: grid;
+			gap: 120px;
+			grid-auto-flow: column;
+			grid-auto-columns: 46%;
+			padding: 0;
+			height: 100%;
+			width: 100vw;
+			align-items: center;
+			overflow-x: scroll;
 			overflow-y: hidden;
+			-webkit-overflow-scrolling: touch;
 
-			.cover {
-				background-image: url("../../../../../../public/images/bornToRunCroped.png");
-				background-size: cover;
-				width: 640px;
+			&::-webkit-scrollbar {
+				height: 0px;
+			}
+
+			.scroller-element {
 				height: 100%;
-				opacity: 0.5;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				&.featured-section {
+					position: relative;
+
+					.featured-image {
+						opacity: 0.5;
+
+					}
+
+					h1 {
+						position: absolute;
+						left: 25%;
+					}
+				}
 
 				.helpers {
 					display: flex;
-					flex-direction: row;
 					align-items: center;
-					width: 100%;
-					height: 48px;
 					gap: 24px;
-					padding-left: 40px;
-					padding-right: 40px;
-					margin-top: 24px;
+					width: 552px;
+					left: 40px;
+					position: fixed;
+					top: 40px;
+					z-index: 0;
 
 					.progress-bar {
-						width: 488px;
+						width: 100%;
 						height: 4px;
-						background: white;
-						opacity: 0.5;
+						background: none;
+						background: #C2C2C2;
 						border-radius: 72px;
+						position: relative;
+						z-index: 1;
+
+						.progress-bar-bg {
+							background-color: $white;
+							height: 4px;
+							z-index: 22;
+						}
 					}
+
 					.close-btn {
 						width: 48px;
 						height: 48px;
@@ -58,6 +87,7 @@
 						place-items: center;
 						border-radius: 100%;
 					}
+
 					.plusic {
 						width: 24px;
 						height: 24px;
@@ -66,61 +96,19 @@
 						cursor: pointer;
 					}
 				}
-			}
 
-			p {
-				font-family: "Inter";
-				font-style: normal;
-				font-weight: 400;
-				font-size: 20px;
-				line-height: 28px;
-				/* or 140% */
+				p {
+					font-family: "Inter";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 28px;
+					/* or 140% */
+					color: rgba(255, 255, 255, 0.7);
+				}
 
-				display: flex;
-				align-items: center;
-				letter-spacing: -0.02em;
-				font-feature-settings: "cv11" on;
 
-				color: rgba(255, 255, 255, 0.7);
-			}
-
-			.contents {
-				height: 100%;
-				display: flex;
-				flex-direction: row;
-				gap: 128px;
-				padding-left: 128px;
-				padding-right: 128px;
-				align-items: center;
-
-				//width: 5376px;
-				//height: 900px;
-
-				/* Inside auto layout */
-
-				//flex: none;
-				//order: 1;
-				//flex-grow: 0;
-
-				.section-1 {
-					// display: flex;
-					// flex-direction: row;
-					// align-items: center;
-
-					// position: relative;
-					// width: 1248px;
-					// height: 512.67px;
-					// left: 128px;
-					// top: 145px;
-
-					// display: flex;
-					// flex-direction: column;
-					// align-items: flex-start;
-					// padding: 0px;
-					// gap: 32px;
-
-					width: 480px;
-					height: 316px;
+				&.section-1 {
 
 					h1 {
 						font-family: "Inter";
@@ -129,114 +117,50 @@
 						font-size: 64px;
 						line-height: 72px;
 						/* or 112% */
-
-						display: flex;
-						align-items: center;
-						letter-spacing: -0.03em;
-						font-feature-settings: "cv11" on;
-
-						background: linear-gradient(90.89deg, #eda215 -7.29%, #da7619 113.76%);
-						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
-						background-clip: text;
 					}
-					// p {
-					// 	font-family: "Inter";
-					// 	font-style: normal;
-					// 	font-weight: 400;
-					// 	font-size: 20px;
-					// 	line-height: 28px;
-					// 	/* or 140% */
 
-					// 	display: flex;
-					// 	align-items: center;
-					// 	letter-spacing: -0.02em;
-					// 	font-feature-settings: "cv11" on;
-
-					// 	color: rgba(255, 255, 255, 0.7);
-					// }
 				}
-				.section-2 {
+
+				&.section-2 {
 					display: flex;
 					flex-direction: column;
 					align-items: flex-start;
 					padding: 0px;
 					gap: 64px;
 
-					width: 640px;
-					height: 512.67px;
-					// p {
-					// 	ont-style: normal;
-					// 	font-weight: 400;
-					// 	font-size: 20px;
-					// 	line-height: 28px;
-					// 	/* or 140% */
 
-					// 	display: flex;
-					// 	align-items: center;
-					// 	letter-spacing: -0.02em;
-					// 	font-feature-settings: "cv11" on;
 
-					// 	color: rgba(255, 255, 255, 0.7);
-					// }
-					.image {
-						background-image: url("../../../../../../public/images/cheetah2.png");
+					.cheetah-img {
+						border-radius: 12px;
 						width: 640px;
 						height: 336px;
-						background-size: cover;
+						flex-shrink: 0;
+
+
 					}
 				}
-				.section-3 {
+
+				&.section-3 {
 					display: flex;
 					flex-direction: column;
 					align-items: flex-start;
 					padding: 0px;
 					gap: 40px;
 
-					width: 752px;
-					height: 512px;
 
-					.images-row {
-						display: flex;
-						flex-direction: row;
-						align-items: flex-start;
-						padding: 0px;
-						gap: 16px;
 
-						width: 752px;
-						height: 336px;
-						.image1 {
-							width: 240px;
-							height: 320px;
-							background-image: url("../../../../../../public/images/chetah-overlay-1.png");
-							background-size: cover;
-						}
-						.image2 {
-							width: 240px;
-							height: 320px;
-							background-image: url("../../../../../../public/images/chetah-overlay-2.png");
-							background-size: cover;
-						}
-						.image3 {
-							width: 240px;
-							height: 320px;
-							background-image: url("../../../../../../public/images/chetah-overlay-3.png");
-							background-size: cover;
-						}
-					}
+
 					.section-3-paragraph {
 						width: 520px;
 						height: 84px;
 						color: rgba(255, 255, 255, 0.7);
 					}
 				}
-				.section-4 {
+
+				&.section-4 {
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
-					gap: 48px;
-					width: 488px;
-					height: 100%;
 
 					.section-4-text {
 						display: flex;
@@ -244,165 +168,85 @@
 						align-items: flex-start;
 						padding: 0px;
 						gap: 8px;
-
-						width: 406px;
-						height: 196px;
+						width: 100%;
 					}
-					.section-4-images-row {
-						display: flex;
-						flex-direction: row;
-						align-items: flex-start;
-						padding: 0px;
-						gap: 16px;
 
-						width: 488px;
-						height: 278px;
 
-						.section-4-image-1 {
-							width: 152px;
-							height: 278px;
-							background-image: url("../../../../../../public/images/bottle-4.png");
-						}
-						.section-4-image-2 {
-							width: 152px;
-							height: 278px;
-							background-image: url("../../../../../../public/images/bottle-5.png");
-						}
-						.section-4-image-3 {
-							width: 152px;
-							height: 278px;
-							background-image: url("../../../../../../public/images/bottle-6.png");
-						}
-					}
 				}
 
-				.section-5 {
+				&.section-5 {
 					height: 100%;
-					width: 571px;
 					display: flex;
 					flex-direction: column;
-					justify-content: center;
 					padding: 0px;
-					gap: 48px;
-
-					.section-5-images-row {
-						width: 571px;
-						height: 399px;
-						position: relative;
-
-						.image-top {
-							position: absolute;
-							width: 336px;
-							height: 240px;
-							top: 0;
-							left: 0;
-							background: #d2d2d2;
-							border-radius: 24px;
-							background-image: url("../../../../../../public/images/chetah-majica-6.png");
-						}
-						.image-bottom {
-							position: absolute;
-							width: 336px;
-							height: 240px;
-							bottom: 0;
-							right: 0;
-							background-size: cover;
-							background: #f1f1f1;
-							border-radius: 24px;
-							background-image: url("../../../../../../public/images/chetah-majica-5.png");
-						}
-					}
-					p {
-						width: 500px;
-						height: 84px;
-					}
 				}
-				.section-6 {
+
+				&.section-6 {
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
 					align-items: flex-start;
 					padding: 0px;
 					gap: 86px;
-					width: 608px;
 					height: 100%;
-
-					.section-6-top-row {
-						display: flex;
-						flex-direction: column;
-						padding: 0px;
-						gap: 32px;
-
-						width: 608px;
-						height: 240px;
-
-						span {
-							letter-spacing: -0.03em;
-							font-feature-settings: "cv11" on;
-							background: linear-gradient(
-															90.89deg,
-															#eda215 -7.29%,
-															#da7619 113.76%
-							);
-							-webkit-background-clip: text;
-							-webkit-text-fill-color: transparent;
-							background-clip: text;
-						}
-					}
-					.section-6-image-row {
-						width: 608px;
-						height: 410px;
-						background-image: url("../../../../../../public/images/chetah-majica-7.png");
-					}
-				}
-				.section-7 {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: flex-start;
-					padding: 0px;
-					gap: 32px;
-
-					width: 752px;
-					height: 100%;
-
-					.section-7-top-row {
-						width: 740px;
-						height: 320px;
-						background-image: url("../../../../../../public/images/section-7-top.png");
-					}
-					.section-7-bottom-row {
-						display: flex;
-						flex-direction: row;
-						align-items: flex-start;
-						padding: 0px;
-						gap: 32px;
-
-						width: 752px;
-						height: 320px;
-
-						.image-left {
-							width: 360px;
-							height: 320px;
-							background-image: url("../../../../../../public/images/section-7-bottom-1.png");
-						}
-
-						.image-right {
-							width: 360px;
-							height: 320px;
-							background-image: url("../../../../../../public/images/section-7-bottom-2.png");
-						}
-					}
 				}
 			}
 		}
+
+		@media(max-width: 550px) {
+			.scroller-container {
+				grid-auto-columns: 100%;
+				gap: 80px;
+
+				.scroller-element {
+					padding-inline: 12px;
+
+
+				}
+
+				.featured-section {
+					padding-inline: 0px !important
+				}
+
+				.section-2 {
+					width: 380px;
+					padding-inline: 16px !important;
+
+					.cheetah-img {
+						// width: unset !important;
+						height: unset !important;
+						width: 100% !important;
+					}
+				}
+
+				.section-3 {
+					padding-inline: 16px;
+				}
+
+				.section-4 {
+					padding-inline: 16px !important;
+
+					img {
+						border-radius: 12px;
+					}
+
+				}
+
+				.section-5 {
+					padding: 54px !important;
+				}
+
+				.section-7 {
+					width: 100%;
+
+					img {
+						border-radius: 12px;
+
+					}
+				}
+			}
+
+
+		}
 	}
 }
-// .modal-header {
-// 	border-bottom: none !important;
-// 	margin-top: 20px !important;
-// 	margin-bottom: 25px !important;
-// }
-
-
-

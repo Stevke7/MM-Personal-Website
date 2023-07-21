@@ -29,13 +29,13 @@ $info: #952CB7;
 $danger: #ED4052;
 $danger-lighter: #FFF8F9;
 $black: #000000;
-$light-gray: #eeeeee;
+$light-gray: #F5F5F5;
 $white: #ffffff;
 
 
 //Text color
 $dark-text: #2E3033;
-$light-text: #9EA5AB;
+$light-text: #667085;
 
 //Buttons color
 $primary-button-bg: $success;
@@ -63,7 +63,14 @@ $primary-button-bg: $success;
 .background-light {
   background-color: $background-light;
 }
-
+.bg-light-gray{
+  background-color: $light-gray;
+}
+.linear-gradient{
+  background: linear-gradient(102deg, #EDA215 0%, #DA7619 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
 //Font weight
 $font-weight-medium: 500;
 $font-weight-regular: 400;

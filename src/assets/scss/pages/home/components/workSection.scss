@@ -17,7 +17,7 @@
 	.card-title {
 		color: #fff;
 		font-family: "Inter";
-		width: 131px;
+		width: 200px;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 32px;
@@ -27,7 +27,6 @@
 
 	.card-text {
 		color: #fff;
-		width: 101px;
 		font-family: "Inter";
 		font-style: normal;
 		font-weight: 400;
@@ -45,4 +44,28 @@
 	cursor: pointer;
 	bottom: 40px;
 	left: 40px;
+}
+
+@media(max-width:550px){
+	.card {
+		.card-body{
+			.card-title{
+				font-family: Inter;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 600;
+				width: 140px;
+				line-height: 32px; /* 133.333% */
+				letter-spacing: -0.72px;
+			}
+			.card-text{
+				font-family: Inter;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				width: 130px;
+				line-height: 24px; /* 150% */
+			}
+		}
+	}
 }

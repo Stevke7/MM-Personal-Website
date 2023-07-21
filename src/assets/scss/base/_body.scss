@@ -1,6 +1,37 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  scrollbar-width: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+ 
+
+  
 }
+
+@media(max-width: 550px){
+  .container-fluid{
+    padding: 0 !important;
+  }
+  .container-lg, .container-md{
+    padding-inline: 24px !important;
+    padding-block: 72px !important
+  }
+}
+@media (min-width: 1024px) {
+  .container{
+    width: 1140px;
+  }
+}
+
+
 
 .icon {
   width: 25px;

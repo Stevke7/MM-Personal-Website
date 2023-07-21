@@ -60,10 +60,24 @@
 	}
 }
 .gear {
-	background-color: #ffff;
-	color: black;
-	width: 86px;
-	height: 48px;
+	display: flex;
+	width: 92px;
+	height: 56px;
+	padding: 12px 30px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1000px;
+	background: $light-gray;
+	backdrop-filter: blur(20px);
+	&:hover{
+		background: var(--light-gray, #cfcece);
+	}
+	&:focus{
+		background: $light-gray;
+
+	}
+
+
 }
 
 .second-line {
