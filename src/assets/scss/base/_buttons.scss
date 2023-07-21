@@ -17,7 +17,7 @@
   }
 
   &:active {
-    background-color: $primary;
+    background-color:none;
     box-shadow: none;
 
     &:focus {
@@ -74,3 +74,19 @@
   }
 }
 
+.btn-light{
+  @extend .btn;
+  background-color:$primary-light;
+  color:$primary;
+   &:hover{
+    color:$primary-light;
+  }
+  &:focus{
+    background-color:$primary-light;
+    color:$primary;
+    &:hover{
+      background-color:$primary;
+      color:$primary-light;
+    }
+  }
+}

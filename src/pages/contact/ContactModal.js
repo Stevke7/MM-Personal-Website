@@ -1,5 +1,5 @@
 import {Form, Modal} from "react-bootstrap";
-import {useContext} from "react";
+import {useContext, useState} from "react";
 import RequestProject from "./components/RequestProject";
 import {IoIosArrowBack} from "@react-icons/all-files/io/IoIosArrowBack";
 import StepperDots from "../../shared/StepperDots";
@@ -8,7 +8,7 @@ import {Step2} from "./components/Step2";
 import {Step3} from "./components/Step3";
 import {Step4} from "./components/Step4";
 import {ContactModalContext} from "./ContactModalContext";
-import {useMultistepForm} from "../../shared/MultistepForm";
+import {useMultiStepForm} from "../../shared/MultiStepForm";
 import {Step5} from "./components/Step5";
 import {Step6} from "./components/Step6";
 import {BsArrowRight} from "react-icons/bs";
@@ -20,7 +20,7 @@ import {SuccessMessage} from "../../shared/Alert";
 
 export function ContactModal(props) {
     const {data, setData} = useContext(ContactModalContext);
-    const {currentStepIndex, back, next, step, isLastStep, setCurrentStepIndex} = useMultistepForm([
+    const {currentStepIndex, back, next, step, isLastStep, setCurrentStepIndex} = useMultiStepForm([
         <RequestProject/>,
         <Step1 nextStep={onSubmit} checkboxHandler={checkboxHandler} data={data}/>,
         <Step2 handleChangeTimepicker={handleChangeTimepicker} data={data}/>,
@@ -30,6 +30,8 @@ export function ContactModal(props) {
         <Step6 inputHandler={inputHandler} data={data}></Step6>
     ])
     const stepArray = [1, 2, 3, 4, 5, 6];
+    const [fullscreen, setFullscreen] = useState(true);
+
 
     function inputHandler(event) {
         event.preventDefault();
@@ -106,6 +108,7 @@ export function ContactModal(props) {
             <Modal
                 {...props}
                 size="xl"
+                fullscreen={props.isMobile ? fullscreen===true : fullscreen===false}
                 aria-labelledby="example-custom-modal-styling-title"
                 centered
                 className="modal"

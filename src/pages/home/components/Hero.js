@@ -1,64 +1,27 @@
-import {Button, Container, Image} from "react-bootstrap";
-import {BsGearFill} from "react-icons/bs";
-import {AiOutlineArrowRight} from "react-icons/ai";
+import { Container, Image} from "react-bootstrap";
 
-function Hero(props) {
-    let {id} = props;
-    const placeholderText = [
-        {
-            text:
-                "I DESIGN UNIQUE WEB / GRAPHIC EXPERIENCES Crafting " +
-                "digital experiences for businesses with a user interface and user" +
-                " experience focused approach",
-            id: id,
-        },
-    ];
 
-    const container = {
-        visible: {
-            transition: {
-                staggerChildren: 0.025,
-            },
-        },
-    };
+function Hero() {
     return (
         <>
-            <Container className="py-5">
-                {/*<motion.div*/}
-                {/*    initial="hidden"*/}
-                {/*    animate="visible"*/}
-                {/*    variants={container}*/}
-                {/*>*/}
-                {/*    <div className="container heading-text my-3">*/}
-                {/*        {placeholderText.map((item, index, id) => {*/}
-                {/*            return <AnimatedText id={id} {...item} key={index}/>;*/}
-                {/*        })}*/}
-
-                {/*        <div className="w-auto d-flex mt-5 align-items-center justify-content-center">*/}
-                {/*            <Button className="btn btn-primary fw-normal">Explore<BiDownArrowAlt/></Button>*/}
-                {/*        </div>*/}
-
-                {/*    </div>*/}
-
-                {/*</motion.div>*/}
+            <Container className="container-md">
                 <div className="d-flex flex-column justify-content-center align-items-center">
                     <Image src="/images/hero-img.svg"></Image>
-                    <h5 className="text-primary my-4">Miloš Miljanović</h5>
-                    <h1 className="display-xl"> The only designer you need</h1>
-                    <h5 className="text-gray my-4">
-                        Simpler. Faster. Better. I make it easy for you to do what matters
+                    <h5 className={`text-primary  mt-5 mb-2 mb-lg-0 `}>Miloš Miljanović</h5>
+                    <h1 className={`heading-xl  text-center`}> The only designer you need</h1>
+                    <h5 className={`text-gray  my-4 text-center`}>
+                        Simpler. Faster. Better. <br/> I make it easy for you to do what matters
                         most.
                     </h5>
-                    <button className="btn text-white my-5">See my work <AiOutlineArrowRight/></button>
+                    <button className="btn text-white mt-5">See my work </button>
                 </div>
                 <div className="d-flex justify-content-end">
-                    <Button className="gear">
-                        <BsGearFill/>
-                    </Button>
+                    <div className="gear cursor-pointer">
+                            <Image src='/icons/moon.stars.fill.svg'></Image>
+                    </div>
                 </div>
             </Container>
-            {/*<TextLoop/>*/}
-        </>
+        </> 
     );
 }
 
