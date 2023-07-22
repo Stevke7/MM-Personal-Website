@@ -3,36 +3,47 @@ import { Col, Container, Image, Modal, ProgressBar, Row } from "react-bootstrap"
 import { TbX } from "react-icons/tb";
 import { BiPlus } from "react-icons/bi";
 
-function ModalOverlay({ showModal, handleCloseModal, title, content }) {
+function ModalOverlay({ showModal, handleCloseModal, title, content, setShowModal }) {
 	const [scrollPercentage, setScrollPercentage] = useState(0);
 	const scrollerContainer = useRef(null);
-
-	useEffect(() => {
-		const container = scrollerContainer.current;
-		if (container) {
-			container.addEventListener("wheel", handleScroll, { passive: false });
-		}
-
-		return () => {
-			if (container) {
-				container.removeEventListener("wheel", handleScroll);
-			}
-		};
-	}, []);
 	const screenWidth = window.innerWidth;
 	const isMobile = screenWidth <= 550;
+	const touchX = useRef(0);
+
 
 	const handleScroll = (e) => {
 		e.preventDefault();
 		const container = scrollerContainer.current;
-		const delta = e.deltaY;
+		const delta = e.type === "wheel" ? e.deltaY : e.touches[0].clientX - touchX;
 		container.scrollLeft += delta;
+	
 		// Calculate the scrolling progress and update the state
 		const { scrollLeft, scrollWidth, clientWidth } = container;
 		const percent = (scrollLeft / (scrollWidth - clientWidth)) * 100;
 		setScrollPercentage(percent);
-	};
-
+	  };
+	
+	  useEffect(() => {
+		const container = scrollerContainer.current;
+	
+		if (container) {
+		  container.addEventListener("wheel", handleScroll, { passive: false });
+		  container.addEventListener("touchstart", (e) => {
+			touchX = e.touches[0].clientX;
+		  }, { passive: true });
+		  container.addEventListener("touchmove", handleScroll, { passive: false });
+		}
+	
+		return () => {
+		  if (container) {
+			container.removeEventListener("wheel", handleScroll);
+			container.removeEventListener("touchstart", (e) => {
+			  touchX = e.touches[0].clientX;
+			});
+			container.removeEventListener("touchmove", handleScroll);
+		  }
+		};
+	  }, []);
 
 	return (
 		<>
@@ -50,7 +61,7 @@ function ModalOverlay({ showModal, handleCloseModal, title, content }) {
 
 								</Image>
 								<h1 className="text-white">Born to run</h1>
-								{!isMobile && <div className="helpers">
+								<div className="helpers">
 									<ProgressBar now={100} className="progress-bar">
 										<div
 											className="progress-bar-bg"
@@ -60,7 +71,7 @@ function ModalOverlay({ showModal, handleCloseModal, title, content }) {
 									<div className="close-btn">
 										<TbX onClick={handleCloseModal} className="plusic" />
 									</div>
-								</div>}
+								</div>
 							</div>
 							<div className="scroller-element section-1">
 								<h1 className="linear-gradient">Unleash Your <br /> inner Athlete</h1>

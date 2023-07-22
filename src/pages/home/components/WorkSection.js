@@ -1,8 +1,7 @@
 import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
 import ModalOverlay from "./modal-overlay/modal-overlay";
 import { BiPlus } from "react-icons/bi";
-import { useState } from "react";
-import { Link, BrowserRouter as Router, useNavigate } from 'react-router-dom';
+import { useEffect, useRef, useState } from "react";
 
 
 const cardsData = [
@@ -85,25 +84,43 @@ function WorkSection() {
 	const [showModal, setShowModal] = useState(false);
 	const [modalContent, setModalContent] = useState("");
 	const [itemsToShow, setItemsToShow] = useState(4); // Number of items to display
-	const navigate = useNavigate()
+	const modalIdRef = useRef(""); // Ref to store the ID for the modal content
+	const [modalId, setModalId] = useState(""); // ID for the modal content
+
+	const allItemsDisplayed = itemsToShow >= cardsData.length; // Check if all items are displayed
 
 	const handleCloseModal = () => {
 		setShowModal(false);
+		window.history.replaceState(null, null, "#"); // Remove the hash route when the modal is closed
+
 	};
-	const handleOpenModal = (content, route) => {
+	const handleOpenModal = (content, id) => {
 
 		setModalContent(content);
-		// navigate.push(route); // Make sure you have access to 'history' object, which is provided by the 'react-router-dom'
+		setModalId(id); // Set the ID for the modal content
 		setShowModal(true);
-
+		window.location.hash = `#${id}`; // Set the hash route when the modal is opened
+		// Use setTimeout to ensure the modal opens after the hash change is detected
+		setTimeout(() => {
+			setShowModal(true);
+		}, 0);
 	};
 	const handleLoadMore = () => {
 		setItemsToShow(itemsToShow + 4); // Increase the number of items to show by 4
 	};
-	const allItemsDisplayed = itemsToShow >= cardsData.length; // Check if all items are displayed
 
+	useEffect(() => {
+		const handleHashChange = () => {
+			if (window.location.hash !== `#${modalIdRef.current}`) {
+				setShowModal(false); // Close the modal if the hash route changess
+			}
+		};
+		window.addEventListener("hashchange", handleHashChange);
 
-
+		return () => {
+			window.removeEventListener("hashchange", handleHashChange);
+		};
+	}, []);
 	return (
 		<>
 			<Container id="work" className="container-lg">
@@ -122,7 +139,7 @@ function WorkSection() {
 									</Card.Text>
 									<BiPlus
 										className="work-plus"
-										onClick={() => handleOpenModal(card.modalContent)}
+										onClick={() => handleOpenModal(card.modalContent, card.title)}
 									/>
 								</Card.Body>
 							</Card>
@@ -136,6 +153,7 @@ function WorkSection() {
 				)}
 				<ModalOverlay
 					showModal={showModal}
+					setShowModal={setShowModal}
 					handleCloseModal={handleCloseModal}
 					content={modalContent}
 				/>
