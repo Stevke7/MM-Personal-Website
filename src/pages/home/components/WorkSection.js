@@ -2,83 +2,8 @@ import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
 import ModalOverlay from "./modal-overlay/modal-overlay";
 import { BiPlus } from "react-icons/bi";
 import { useEffect, useRef, useState } from "react";
+import cardsData from '../../../mock/cardData.json';
 
-
-const cardsData = [
-	{
-		id: 1,
-		title: "Cheetah Athletics",
-		description: "Logo design",
-		image: "/images/Desktop/cheetah-cover.png",
-		modalContent: "Content for Cheetah Atletic modal",
-	},
-	{
-		id: 2,
-		title: "Trekker",
-		description: "UI/UX Design",
-		image: "/images/Desktop/trekker-cover.png",
-		modalContent: "Content for Trekker modal",
-	},
-	{
-		id: 3,
-		title: "Ecco Energy",
-		description: "Logo Design",
-		image: "/images/Desktop/ecoenergy-cover.png",
-		modalContent: "Content for Ecco Energy modal",
-	},
-	{
-		id: 4,
-		title: "Mindful Sould",
-		description: "Website redesign",
-		image: "/images/Desktop/mindfulsouls-cover.png",
-		modalContent: "Content for Mindful Sould modal",
-	},
-	{
-		id: 3,
-		title: "Ecco Energy",
-		description: "Logo Design",
-		image: "/images/Desktop/ecoenergy-cover.png",
-		modalContent: "Content for Ecco Energy modal",
-	},
-	{
-		id: 4,
-		title: "Mindful Sould",
-		description: "Website redesign",
-		image: "/images/Desktop/mindfulsouls-cover.png",
-		modalContent: "Content for Mindful Sould modal",
-	},
-	{
-		id: 3,
-		title: "Ecco Energy",
-		description: "Logo Design",
-		image: "/images/Desktop/ecoenergy-cover.png",
-		modalContent: "Content for Ecco Energy modal",
-	},
-	{
-		id: 4,
-		title: "Mindful Sould",
-		description: "Website redesign",
-		image: "/images/Desktop/mindfulsouls-cover.png",
-		modalContent: "Content for Mindful Sould modal",
-	},
-	{
-		id: 3,
-		title: "Ecco Energy",
-		description: "Logo Design",
-		image: "/images/Desktop/ecoenergy-cover.png",
-		modalContent: "Content for Ecco Energy modal",
-	},
-	{
-		id: 4,
-		title: "Mindful Sould",
-		description: "Website redesign",
-		image: "/images/Desktop/mindfulsouls-cover.png",
-		modalContent: "Content for Mindful Sould modal",
-	},
-
-
-
-];
 
 function WorkSection() {
 	const [showModal, setShowModal] = useState(false);
@@ -131,7 +56,7 @@ function WorkSection() {
 					{cardsData.slice(0, itemsToShow).map((card) => (
 						<Col md={6} className="p-block-12 " key={card.id}>
 							<Card className="work-background position-relative"	>
-								<Image className="h-100 " src={`${card.image}`} />
+								<Image className="h-100 " src={card.image} />
 								<Card.Body className="position-absolute w-100 h-100 ">
 									<Card.Title className="card-title">{card.title}</Card.Title>
 									<Card.Text className="card-text">
@@ -139,7 +64,7 @@ function WorkSection() {
 									</Card.Text>
 									<BiPlus
 										className="work-plus"
-										onClick={() => handleOpenModal(card.modalContent, card.title)}
+										onClick={() => handleOpenModal(card.modalContent.content, card.title)}
 									/>
 								</Card.Body>
 							</Card>
@@ -152,6 +77,7 @@ function WorkSection() {
 					</div>
 				)}
 				<ModalOverlay
+					cardsData={cardsData}
 					showModal={showModal}
 					setShowModal={setShowModal}
 					handleCloseModal={handleCloseModal}
