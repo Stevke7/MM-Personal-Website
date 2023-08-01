@@ -44,7 +44,7 @@ function Header(props) {
 
 
                     <Col xs={9} md={4} className="d-flex justify-content-end pe-0 ">
-                        <button onClick={() => setModalShow(true)} className={` ${id === "light" ? 'btn-light' : 'btn-dark'} t  p-0 px-md-3 py-md-2  ${isMobile && "bg-white"}`}> Request a
+                        <button id='requestProject' onClick={() => setModalShow(true)} className={` ${id === "light" ? 'btn-light' : 'btn-dark'} t  p-0 px-md-3 py-md-2  ${isMobile && "bg-white"}`}> Request a
                             project <AiOutlineArrowRight />
                         </button>
                     </Col>

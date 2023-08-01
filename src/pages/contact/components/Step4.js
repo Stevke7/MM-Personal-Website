@@ -3,7 +3,7 @@ import React from "react";
 
 const Step4 = ({ inputHandler, data }) => {
     return (
-        <Row className="flex-column align-items-center justify-content-center  max-height-385 w-100 ">
+        <Row className="flex-column align-items-center justify-content-center  max-height-385  ">
             <Col xs={12} md={6}>
                 <h4 className="mb-3  text-center">About your company</h4>
                 <Form.Group className="mb-3 form-container">
