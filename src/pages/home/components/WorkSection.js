@@ -5,7 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import cardsData from '../../../mock/cardData.json';
 
 
-function WorkSection() {
+function WorkSection(props) {
+	const { theme } = props
 	const [showModal, setShowModal] = useState(false);
 	const [modalContent, setModalContent] = useState("");
 	const [itemsToShow, setItemsToShow] = useState(4); // Number of items to display
@@ -73,7 +74,7 @@ function WorkSection() {
 				</Row>
 				{!allItemsDisplayed && (
 					<div className="w-100 d-flex justify-content-center mt-5">
-						<Button className="btn-light" onClick={handleLoadMore}> Load more</Button>
+						<Button className={`${theme === "light" ? 'btn-light' : 'btn-dark'}`} onClick={handleLoadMore}> Load more</Button>
 					</div>
 				)}
 				<ModalOverlay

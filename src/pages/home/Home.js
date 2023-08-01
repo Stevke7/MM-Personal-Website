@@ -5,20 +5,19 @@ import Social from "./components/Social";
 import WorkSection from "./components/WorkSection";
 
 function Home(props) {
-	let { id, services, work, workRef, contactRef, isMobile } = props;
+	let { id, services, work, workRef, contactRef, isMobile, themeSwitch } = props;
 
 
 	return (
 		<>
-			<Hero isMobile={isMobile} id={id} />
-			<MyServices isMobile={isMobile} id={services} />
+			<Hero themeSwitch={themeSwitch} isMobile={isMobile} theme={id} />
+			<MyServices theme={id} isMobile={isMobile} id={services} />
 			<div ref={workRef}>
-				<WorkSection id={work} />
+				<WorkSection theme={id} id={work} />
 			</div>
 			<div ref={contactRef}>
-				<CallToAction/>
+				<CallToAction theme={id} />
 			</div>
-
 		</>
 	);
 }

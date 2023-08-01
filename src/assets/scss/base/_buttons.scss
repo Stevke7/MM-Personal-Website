@@ -17,7 +17,7 @@
   }
 
   &:active {
-    background-color:none;
+    background-color: none;
     box-shadow: none;
 
     &:focus {
@@ -27,31 +27,6 @@
 
     &:hover {
       background-color: $primary;
-    }
-  }
-}
-
-.request-modal {
-  @extend .btn;
-  background-color: $primary-light;
-  color: $primary;
-
-  &:hover {
-    background-color: $primary-light;
-    color: $primary;
-  }
-
-  &:active {
-    background-color: $primary-light;
-    color: $primary;
-
-    &:focus {
-      box-shadow: none;
-      outline: none;
-    }
-
-    &:hover {
-      background-color: $primary-light;
     }
   }
 }
@@ -74,19 +49,45 @@
   }
 }
 
-.btn-light{
+.btn-light {
   @extend .btn;
-  background-color:$primary-light;
-  color:$primary;
-   &:hover{
-    color:$primary-light;
+  background-color: $primary-lighter;
+  color: $primary;
+
+  &:hover {
+    color: $primary;
+
+    background-color: $primary-light;
   }
-  &:focus{
-    background-color:$primary-light;
-    color:$primary;
-    &:hover{
-      background-color:$primary;
-      color:$primary-light;
+
+  &:focus {
+    background-color: $primary-light;
+    color: $primary;
+
+    &:hover {
+      background-color: $primary-lighter;
+      color: $primary;
+    }
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background-color: $primary-dark;
+  color: $white;
+
+  &:hover {
+    color: $white;
+    background-color: $primary;
+  }
+
+  &:focus {
+    background-color: $primary-dark;
+    color: $white;
+
+    &:hover {
+      color: $white;
+      background-color: $primary;
     }
   }
 }

@@ -59,7 +59,8 @@
 		}
 	}
 }
-.gear {
+
+.themeSwitch {
 	display: flex;
 	width: 92px;
 	height: 56px;
@@ -69,10 +70,12 @@
 	border-radius: 1000px;
 	background: $light-gray;
 	backdrop-filter: blur(20px);
-	&:hover{
+
+	&:hover {
 		background: var(--light-gray, #cfcece);
 	}
-	&:focus{
+
+	&:focus {
 		background: $light-gray;
 
 	}

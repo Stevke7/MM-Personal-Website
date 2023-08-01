@@ -1,8 +1,7 @@
-
 form {
 
   .form-control {
-    width: 480px;
+    // width: 480px;
     padding: 18px;
     border: 1.5px solid #D8E7FF;
     background: #F4F8FF;
@@ -20,7 +19,6 @@ form {
   .form-check {
     display: flex;
     justify-content: space-between;
-    width: 480px;
     background: #F4F8FF;
     flex-flow: row-reverse;
     border: 1.5px solid #D8E7FF;
@@ -89,11 +87,13 @@ form {
         box-shadow: none;
       }
     }
+
     & input[type="checkbox"]:checked {
       background-image: none;
       background-color: $primary;
       border: 2px solid $primary
     }
+
     & input[type="radio"]:checked {
       background-image: none;
       background-color: $primary;
@@ -107,6 +107,7 @@ form {
   *:has(> input[type="checkbox"]:checked) {
     border: 2px solid $primary
   }
+
   *:has(> input[type="radio"]:checked) {
     border: 2px solid $primary
   }
@@ -121,7 +122,7 @@ form {
     width: 100%;
     border: none;
     background: none;
-    
+
     &:focus {
       outline: none;
     }
@@ -129,8 +130,11 @@ form {
 }
 
 @media (max-width: 560px) {
+  .form-control {
+    width: 100% !important;
+  }
 
-  .form-check{
+  .form-check {
     width: 100% !important;
   }
 }

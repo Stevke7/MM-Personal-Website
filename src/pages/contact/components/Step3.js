@@ -1,14 +1,14 @@
-import {Form} from "react-bootstrap";
+import { Col, Form, Row } from "react-bootstrap";
 
-export function Step3({radioHandler, data, nextStep,}) {
+export function Step3({ radioHandler, data, nextStep, }) {
 
 
     return (
         <>
-            <div className="d-flex flex-column align-items-center justify-content-center  max-height-385 ">
-                <h4 className="mb-3 text-center">What’s the budget
-                    for your project?</h4>
-                {/*<Form className="mt-5">*/}
+            <Row className="flex-column align-items-center justify-content-center  max-height-385 ">
+                <Col xs={12} md={6}>
+                    <h4 className="mb-3 text-center">What’s the budget
+                        for your project?</h4>
                     <Form.Check
                         onClick={radioHandler}
                         checked={data.minBudget}
@@ -36,8 +36,8 @@ export function Step3({radioHandler, data, nextStep,}) {
                         label="€10,000 >"
                         className="cursor-pointer"
                     />
-                {/*</Form>*/}
-            </div>
+                </Col>
+            </Row>
 
         </>
 

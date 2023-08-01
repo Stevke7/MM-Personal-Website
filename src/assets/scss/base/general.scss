@@ -1,19 +1,160 @@
-
-
 #light {
-	background-color:$white;
+	background-color: $white;
 }
 
 #dark {
 	background-color: $background-dark;
+
+	h1 {
+		color: $white
+	}
+
+	h5 {
+		color: $light-gray;
+		opacity: 0.6000000238418579;
+	}
+
+	h4 {
+		color: $white
+	}
+
+	p {
+		color: #667085
+	}
+
+	.themeSwitch {
+		background-color: $secondary-dark;
+
+		&:hover {
+			background-color: $black;
+		}
+	}
+
+	.cards {
+		.card-service {
+			background-color: $background-dark;
+			color: white;
+			border: 2px solid $background-dark;
+		}
+	}
+
+	.footer {
+		background-color: $background-dark !important;
+
+		p {
+			color: $light-gray !important;
+			opacity: 0.6000000238418579;
+		}
+	}
+
+	.modal-content {
+		background-color: $background-dark !important;
+	}
+
+	.form-check {
+		background-color: $bg-dark;
+		border: 2px solid $bg-dark;
+
+		color: $label-light ;
+
+		&:hover {
+			border: 1.5px solid $primary;
+		}
+
+
+	}
+
+	label {
+		color: $label-light
+	}
+
+	.MuiBox-root {
+		background: $bg-dark;
+		border: 1.5px solid $bg-dark;
+
+
+		input {
+			color: $label-dark ;
+		}
+
+		button {
+			color: $label-dark
+		}
+
+		&:hover {
+			border: 1.5px solid $primary;
+		}
+	}
+
+	.form-container {
+		input {
+			background: $bg-dark;
+			border: 1.5px solid $bg-dark;
+			color: $label-light
+		}
+
+		textarea {
+			background: $bg-dark;
+			border: 1.5px solid $bg-dark;
+			color: $label-light
+		}
+	}
+
+	*:has(> input[type="checkbox"]:checked) {
+		border: 2px solid $primary
+	}
+
+	*:has(> input[type="radio"]:checked) {
+		border: 2px solid $primary
+	}
+
+	.active-ux-content {
+		p {
+			color: $label-light
+		}
+	}
+
+	.active-branding-content {
+		p {
+			color: $label-light
+		}
+	}
+
+	.active-design-content {
+		p {
+			color: $label-light
+		}
+	}
+
+	.card-body {
+		h5 {
+			color: $label-light;
+			opacity: 1;
+
+		}
+
+		p {
+			color: $label-light
+		}
+	}
+
+
+	@media(max-width: 550px) {
+		.btn-dark {
+			background: none !important;
+		}
+	}
+
+
 }
+
 
 .fit-content {
 	width: fit-content;
 }
 
 .border-bt-none {
-  border-bottom: none;
+	border-bottom: none;
 }
 
 
@@ -36,15 +177,8 @@
 	line-height: 0px;
 }
 
-#dark {
-	.marquee {
-		background-color: $white;
 
-		div {
-			color: $black;
-		}
-	}
-}
+
 
 .h-400 {
 	height: 400px;
@@ -83,60 +217,75 @@
 }
 
 .m-top {
-  margin-top: 12rem;
+	margin-top: 12rem;
 }
 
 
 .border-none {
-  border: none
+	border: none
 }
 
 .border-radius-16 {
-  border-radius: 16px;
+	border-radius: 16px;
 }
-.Toastify__toast{
-  border-radius: 16px!important;
+
+.Toastify__toast {
+	border-radius: 16px !important;
 }
-.success-toast{
-  width: 420px;
-  height: 240px;
-  padding: 48px 16px;
-  .Toastify__toast-body{
-    display: flex;
-    flex-direction: column;
-    .Toastify__toast-icon{
-      display: none;
-    }
-  }
-  .Toastify__close-button{
-    display: none;
-  }
+
+.success-toast {
+	width: 420px;
+	height: 240px;
+	padding: 48px 16px;
+
+	.Toastify__toast-body {
+		display: flex;
+		flex-direction: column;
+
+		.Toastify__toast-icon {
+			display: none;
+		}
+	}
+
+	.Toastify__close-button {
+		display: none;
+	}
 }
-.p-block-12{
+
+.p-block-12 {
 	padding-block: 12px;
 }
-.container-lg{
-	padding-block: 120px ;
-	padding-inline: 0px ;
+
+.container-lg {
+	padding-block: 120px;
+	padding-inline: 0px;
 }
-.container-md{
-	padding-top:60px;
+
+.container-md {
+	padding-top: 60px;
 	padding-bottom: 120px;
 }
-.gap-24{
+
+.gap-24 {
 	gap: 24px;
 }
-.margin-right-120{
+
+.margin-right-120 {
 	margin-right: 120px;
 }
 
-@media (max-width:550px){
-	h1{
-		font-size: 40px!important;
-		line-height: 1!important;
+@media (max-width:550px) {
+	h1 {
+		font-size: 40px !important;
+		line-height: 1 !important;
 	}
-	h5{
+
+	h5 {
 		font-size: 20px;
-		font-weight: normal!important;
+		font-weight: normal !important;
 	}
+}
+
+.opacity-1 {
+	opacity: 1 !important;
 }

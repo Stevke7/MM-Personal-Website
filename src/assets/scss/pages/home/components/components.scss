@@ -151,6 +151,24 @@
 /* MY SERVICES */
 
 .cards {
+	.hover-rose {
+		&:hover {
+			border: 2px solid $rose !important;
+		}
+	}
+
+	.hover-primary {
+		&:hover {
+			border: 2px solid $primary !important;
+		}
+	}
+
+	.hover-purple {
+		&:hover {
+			border: 2px solid $purple !important;
+		}
+	}
+
 	.card-service {
 		display: flex;
 		position: relative;
@@ -163,6 +181,7 @@
 		height: 440px;
 		background-color: #ffffff;
 		border-radius: 16px;
+		border: 2px solid $background-light;
 
 		.card-content {
 			display: flex;
@@ -182,40 +201,13 @@
 				text-align: center;
 				width: 188px;
 			}
+
 			.logo-design-text {
 				width: 200px;
 			}
-			.icon-circle {
-				width: 92px;
-				height: 92px;
-				display: grid;
-				place-content: center;
-				border-radius: 50%;
-			}
-			.mozda {
-				vertical-align: unset;
-			}
-			.gradient1 {
-				background: #d8e7ff;
-				border: 12px solid #f4f8ff;
-			}
-			.gradient2 {
-				/* Purple/20 */
 
-				background: #e7dbff;
-				/* Purple/10 */
-
-				border: 12px solid #f4eeff;
-			}
-			.gradient3 {
-				/* Success/20 */
-
-				background: #d1fadf;
-				/* Success/10 */
-
-				border: 12px solid #ecfdf3;
-			}
 		}
+
 		.plus {
 			display: flex;
 			position: absolute;
@@ -229,6 +221,7 @@
 
 			//transition: 0.3s ease all;
 		}
+
 		.see-more {
 			display: flex;
 			border-radius: 50%;
@@ -237,7 +230,7 @@
 			width: 40px;
 			height: 40px;
 			transition: 0.3s ease all;
-			background: #f8f8f8;
+			// background: #f8f8f8;
 			border-radius: 1000px;
 			//z-index: 1;
 
@@ -249,7 +242,7 @@
 		& .more-ux {
 			display: none;
 			transition: 3s ease all;
-			font-size: 18px;
+			font-size: 16px;
 
 			&.active-ux {
 				display: flex;
@@ -264,6 +257,7 @@
 				align-items: center;
 				justify-content: center;
 			}
+
 			.active-ux-content {
 				display: flex;
 				flex-direction: column;
@@ -330,7 +324,7 @@
 		.more-branding {
 			display: none;
 			transition: 3s ease all;
-			font-size: 18px;
+			font-size: 16px;
 
 			&.active-branding {
 				display: flex;
@@ -345,6 +339,7 @@
 				align-items: center;
 				justify-content: center;
 			}
+
 			.active-branding-content {
 				display: flex;
 				flex-direction: column;
@@ -412,21 +407,25 @@
 		.more-design {
 			display: none;
 			transition: 3s ease all;
-			font-size: 18px;
+			font-size: 16px;
+
+
 
 			&.active-design {
 				display: flex !important;
 				flex-direction: column;
 				transition: 0.3s ease all;
-				border-radius: 20px;
+				border-radius: 16px;
 				position: relative;
 				top: 0;
 				width: 100%;
 				height: 100%;
 				background-color: $primary;
 				align-items: center;
+
 				justify-content: center;
 			}
+
 			.active-design-content {
 				display: flex;
 				flex-direction: column;
