@@ -1,34 +1,128 @@
 .contactForm {
-	background-color: #e0eaf4;
-	border-radius: 24px;
-	padding-left: 30px;
-	padding-right: 30px;
-	height: 100%;
+  background-color: #e0eaf4;
+  border-radius: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
 }
+
 .details {
-	background-color: #e0eaf4;
-	height: 100%;
-	border-radius: 24px;
-	padding-left: 30px;
-	padding-top: 25px;
+  background-color: #e0eaf4;
+  height: 100%;
+  border-radius: 24px;
+  padding-left: 30px;
+  padding-top: 12px;
 }
 
 .containerContact {
-	margin-bottom: 150px;
+  margin-bottom: 150px;
 }
+
 .sendBtn {
-	margin-bottom: 25px;
-	margin-top: 30px;
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
+
 .downloadBtn {
-	margin-bottom: 25px;
-	margin-top: 30px;
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
+
+.modal {
+  padding-left: 0px !important;
+
+  #contact-modal {
+    &.modal-dialog {
+      width: 80%;
+    }
+  }
+
+  .modal-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .modal-content {
+      width: 100%;
+      min-height: 600px;
+      border-radius: 16px;
+      height: 100%;
+
+      .modal-header {
+        padding: 16px 48px;
+      }
+
+      form {
+        h4 {
+          margin-bottom: 32px !important;
+        }
+      }
+
+      .modal-body {
+        padding-top: 0px;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          min-height: 470px;
+
+        }
+      }
+
+      .modal-footer {
+        border-top: none;
+        padding: 16px 48px;
+      }
+    }
+
+
+  }
+
+
+
+
+}
+
 @media (max-width: 520px) {
-	.contactForm {
-		margin-bottom: 20px;
-	}
-	.sendBtn {
-		margin-bottom: 25px;
-	}
+  .contactForm {
+    margin-bottom: 20px;
+  }
+
+  .sendBtn {
+    margin-bottom: 25px;
+  }
+
+  .Toastify__toast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px !important;
+
+    .Toastify__toast {
+      width: 300px !important;
+      margin-bottom: 12px;
+    }
+  }
+
+  .modal {
+    .modal-dialog {
+      width: 100%;
+
+      .modal-content {
+        border-radius: 0px !important;
+
+        .form-container {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #contact-modal {
+    &.modal-dialog {
+      width: 100% !important
+    }
+  }
 }

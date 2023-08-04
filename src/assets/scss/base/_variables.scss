@@ -1,32 +1,54 @@
-$primary: #B9EBFD;
-$primary-dark: #9CD1FCFF;
-$primary-blue: #3A86FF;
-$primary-blue-lighter: rgba(58, 134, 255, 0.8);
+$primary: #3A86FF;
+$primary-dark: #2365CE;
+$primary-light: #D8E7FF;
+$primary-lighter: #F4F8FF;
+$primary-dark: #164B9F;
+$purple: #9E77ED;
+$purple-dark: #53389E;
+$purple-light: #E7DBFF;
+$purple-lighter: #F4EEFF;
+$success: #47D478;
+$success-dark: #039855;
+$success-light: #D1FADF;
+$success-lighter: #ECFDF3;
+$warning: #FEC84B;
+$warning-dark: #F2A516;
+$warning-light: #FEEEBF;
+$warning-lighter: #FFF9E5;
+$error: #D92D20;
+$error-dark: #AD1206;
+$error-light: #FFDCDA;
+$error-lighter: #FEEEED;
 
 $background: #E0EAF4;
 $background-light: #F4F7FA;
-$background-dark: $black;
+$background-dark: #121212;
 $secondary: #1C1D20;
 $secondary-light: #D7D7D8;
-$secondary-dark: #414141;
+$secondary-dark: #2C2C2F;
 $info: #952CB7;
-$info-lighter: #FAF5FF;
-$success-lighter: #ECFFF4;
-$warning: #FC9D79;
-$warning-lighter: #FFF7F3;
+$rose: #F670C7;
+$purple: #9E77ED;
+$blue: #36BFFA;
 $danger: #ED4052;
 $danger-lighter: #FFF8F9;
 $black: #000000;
-$light-gray: #eeeeee;
+$light-gray: #F5F5F5;
+$text-gray: #00000099;
 $white: #ffffff;
 
 
 //Text color
 $dark-text: #2E3033;
-$light-text: #9EA5AB;
+$light-text: #667085;
 
 //Buttons color
 $primary-button-bg: $success;
+
+//Input field 
+$bg-dark: #333;
+$label-dark: rgba(245, 245, 245, 0.40);
+$label-light: #F5F5F5; 
 
 //background
 
@@ -42,11 +64,7 @@ $primary-button-bg: $success;
   background-color: $background;
 }
 
-//.bg-gradient-orange {
-//  background: rgb(237, 203, 21);
-//  background: linear-gradient(151deg, rgba(237, 203, 21, 1) 0%, rgba(230, 172, 23, 1) 26%, rgba(218, 118, 25, 1) 100%);
 //
-//}
 
 .background-dark {
   background-color: $background-dark;
@@ -54,6 +72,33 @@ $primary-button-bg: $success;
 
 .background-light {
   background-color: $background-light;
+}
+
+.bg-light-gray {
+  background-color: $light-gray;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-rose {
+  background-color: $rose !important;
+}
+
+.bg-blue {
+  background-color: $blue !important;
+}
+
+.bg-purple {
+  background-color: $purple !important;
+}
+
+.linear-gradient {
+  background: linear-gradient(102deg, #EDA215 0%, #DA7619 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 //Font weight

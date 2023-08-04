@@ -1,13 +1,13 @@
-import {Col, Container, Image, Row} from "react-bootstrap";
-import {useState} from "react";
-import {BiPlus} from "react-icons/bi";
-import {useMediaQuery} from "react-responsive";
+import { Col, Container, Image, Row } from "react-bootstrap";
+import { useState } from "react";
+import { BiPlus } from "react-icons/bi";
+import { useMediaQuery } from "react-responsive";
 
 function MyWork() {
 
     const [showAbout, setShowAbout] = useState(false)
     const [showSkill, setShowSkill] = useState(false)
-    const isMobile = useMediaQuery({query: `(max-width: 1024px)`});
+    const isMobile = useMediaQuery({ query: `(max-width: 1024px)` });
 
     function openAbout() {
         setShowAbout(prevState => !showAbout)
@@ -25,7 +25,7 @@ function MyWork() {
                     <Row className=''>
                         <Col md={7}>
                             <div className="image-container-right ">
-                                <Image fluid={true} src='/images/work-img .png' className="w-100 " alt=""/>
+                                <Image fluid={true} src='/images/work-img .png' className="w-100 " alt="" />
                                 <h3 className="img-text-left">My work</h3>
                             </div>
                         </Col>
@@ -33,12 +33,12 @@ function MyWork() {
                             <div className="d-flex flex-column justify-content-between h-100">
                                 <div onClick={openAbout} className="image-container-left  h-48  cursor-pointer  ">
                                     <Image fluid={true} src='/images/aboutMe.png' className="h-100 "
-                                           alt=""/>
+                                        alt="" />
                                     <h3 className="img-text-right">About me</h3>
                                     <BiPlus onClick={openAbout}
-                                            id={1}
-                                            name='about'
-                                            className={`more-info-icon ${showAbout && 'active-more'} `}/>
+                                        id={1}
+                                        name='about'
+                                        className={`more-info-icon ${showAbout && 'active-more'} `} />
                                     <div className={`moreAbout ${showAbout && 'active-about'}`}>
                                         <p className="d-flex align-items-center p-3">I'm Miloš, digital designer and
                                             content
@@ -53,13 +53,13 @@ function MyWork() {
                                 </div>
                                 <div onClick={openSkill} className="image-container-left  h-48  cursor-pointer  ">
                                     <Image fluid={true} src='/images/skils-img.png' className="h-100 w-100 "
-                                           alt=""/>
+                                        alt="" />
                                     <h3 className="img-text-right">My skills</h3>
                                     <BiPlus
                                         id={2}
                                         name='skills'
                                         onClick={openSkill}
-                                        className={`more-info-icon ${showSkill && 'active-more'} `}/>
+                                        className={`more-info-icon ${showSkill && 'active-more'} `} />
                                     <div className={`moreSkill  ${showSkill && 'active-skill  '}`}>
                                         <div className="d-flex flex-wrap  ">
                                             <div className="badge">Web Design</div>
@@ -89,7 +89,7 @@ function MyWork() {
                             <div className=" w-77 position-relative">
                                 <p className="f-27 px-5 work-info w-100">
                                     <span className="fw-bold">I’m a digital designer and creator.</span>
-                                    <br/>
+                                    <br />
                                     Designing digital
                                     products
                                     and experiences, I help brands
@@ -97,7 +97,7 @@ function MyWork() {
                                 </p>
                                 <div className="checkoutMyWork ">
                                     <Image className="myWork-img" src='/icons/Arrow.svg'></Image>
-                                    <p>Check out <br/> my artwork</p>
+                                    <p>Check out <br /> my artwork</p>
                                 </div>
                             </div>
                             <div className=' '>
@@ -112,7 +112,7 @@ function MyWork() {
                     <Row>
                         <Col className='h-100' lg={7}>
                             <div className="image-container-right h-100">
-                                <Image fluid={true} src='/images/work-img .png' className="w-100 h-100" alt=""/>
+                                <Image fluid={true} src='/images/work-img .png' className="w-100 h-100" alt="" />
                                 <h6 className="img-text-left">My work</h6>
                             </div>
                             {/*src='/images/unsplash_fd6K_OFlnRA-1.png'*/}
@@ -122,12 +122,12 @@ function MyWork() {
                             <div className="d-flex flex-column h-100 justify-content-between">
                                 <div onClick={openAbout} className="image-container-left cursor-pointer my-3 ">
                                     <Image fluid={true} src='/images/aboutMe.png' className="w-100 h-100"
-                                           alt=""/>
+                                        alt="" />
                                     <h6 className="img-text-right">About me</h6>
                                     <BiPlus onClick={openAbout}
-                                            id={1}
-                                            name='about'
-                                            className={`more-info-icon ${showAbout && 'active-more'} `}/>
+                                        id={1}
+                                        name='about'
+                                        className={`more-info-icon ${showAbout && 'active-more'} `} />
                                     <div className={`moreAbout ${showAbout && 'active-about'}`}>
                                         <p className="d-flex align-items-center p-3">I'm Miloš, digital designer and
                                             content
@@ -142,13 +142,13 @@ function MyWork() {
                                 </div>
                                 <div onClick={openSkill} className="image-container-left cursor-pointer  ">
                                     <Image fluid={true} src='/images/skils-img.png' className="w-100 h-100"
-                                           alt=""/>
+                                        alt="" />
                                     <h6 className="img-text-right">My skills</h6>
                                     <BiPlus
                                         id={2}
                                         name='skills'
                                         onClick={openSkill}
-                                        className={`more-info-icon ${showSkill && 'active-more'} `}/>
+                                        className={`more-info-icon ${showSkill && 'active-more'} `} />
                                     <div className={`moreSkill  ${showSkill && 'active-skill  '}`}>
                                         <div className="d-flex flex-wrap  ">
                                             <div className="badge">Web Design</div>
@@ -178,7 +178,7 @@ function MyWork() {
                             <div className=" position-relative">
                                 <p className="p-3 work-info w-100">
                                     <span className="fw-bold">I’m a digital designer and creator.</span>
-                                    <br/>
+                                    <br />
                                     Designing digital
                                     products
                                     and experiences, I help brands

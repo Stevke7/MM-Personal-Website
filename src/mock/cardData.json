@@ -1,0 +1,301 @@
+[
+  {
+    "id": 1,
+    "title": "Cheetah Athletics",
+    "description": "Logo design",
+    "image": "images/Desktop/cheetah-cover.png",
+    "modalContent": {
+      "content": "Content for Cheetah Athletic modal",
+      "featuredImg": "images/bornToRunCroped.png",
+      "mainTitle": "Born to run",
+      "sectionOne": {
+        "title": "Unleash Your inner Athlete",
+        "text": "Cheetah Athletics is a sports and apparel club that provides everything you need to achieve your sports & fitness goals. It pushes people to live an active and healthy lifestyle by training, eating and wearing better."
+      },
+      "sectionTwo": {
+        "text": "Cheetahs are the world’s fastest land animal, capable of reaching speeds of up to 70mph. They are built for speed, grace, and hunting.",
+        "whiteText": "Cheetah Athletics encompass the spirit of cheetah and live its moto - Born to run!",
+        "image": "images/cheetah2.png",
+        "mobileImage": "images/cheetah-mobile-1.png"
+      },
+      "sectionThree": {
+        "imageOneMobile": "images/cheetah-mobile-2.png",
+        "imageOne": "images/chetah-overlay-1.png",
+        "imageTwoMobile": "images/cheetah-mobile-3.png",
+        "imageTwo": "images/chetah-overlay-2.png",
+        "imageThreeMobile": "images/cheetah-mobile-4.png",
+        "imageThee": "images/chetah-overlay-3.png",
+        "text": "The logo is created by combining a cheetah silhouette, with the lettermarks enclosed in a circular shape. The circle represents stability, continuity and perseverance."
+      },
+      "sectionFour": {
+        "imageOneMobile": "images/cheetah-mobile-5.png",
+        "imageOne": "images/bottle-4.png",
+        "imageTwoMobile": "images/cheetah-mobile-6.png",
+        "imageTwo": "images/bottle-5.png",
+        "imageThreeMobile": "images/cheetah-mobile-7.png",
+        "imageThee": "images/bottle-6.png",
+        "headingOne": "Train good.",
+        "headingTwo": "Eat good.",
+        "headingThree": "Look good."
+      },
+      "sectionFive": {
+        "imageOneMobile": "images/cheetah-mobile-8.png",
+        "imageTwoMobile": "images/cheetah-mobile-10.png",
+        "image": "images/cheetah-majice.png",
+        "text": "Cheetah Athletics is a sports and apparel club that provides everything you need to achieve your sports & fitness goals."
+      },
+      "sectionSix": {
+        "headingColored": "Perfect fit",
+        "heading": "and harmony between sports and technology",
+        "text": "Cheetah Athletics is a sports and apparel club.",
+        "image": "images/chetah-majica-7.png",
+        "imageMobile": "images/cheetah-mobile-11.png"
+      },
+      "sectionSeven": {
+        "imageOneMobile": "images/section-7-top.png",
+        "imageOne": "images/section-7-top.png",
+        "imageTwoMobile": "images/cheetah-mobile-13.png",
+        "imageTwo": "images/section-7-bottom-1.png",
+        "imageThreeMobile": "images/cheetah-mobile-14.png",
+        "imageThree": "images/section-7-bottom-2.png"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Trekker",
+    "description": "UI/UX Design",
+    "image": "images/Desktop/trekker-cover.png",
+    "modalContent": {
+      "content": "Content for Trekker modal",
+      "featuredImg": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+      "mainTitle": "The right way to travel",
+      "sectionOne": {
+        "title": "Section header",
+        "text": "Lorem ipsum dolor sit amet consectetur. Interdum viverra varius eget congue consectetur. Dui cursus sagittis at quis sed tristique lacus. Phasellus phasellus convallis molestie quis cursus amet viverra congue sed. Mauris sit tristique praesent arcu amet turpis. Fames leo nulla rutrum sit. Nulla quis donec sit lectus erat scelerisque velit."
+      },
+      "sectionTwo": {
+        "text": "Lorem ipsum dolor sit amet consectetur. Egestas auctor egestas amet et facilisis a dui. Nec magna morbi quam augue vitae aliquet. Maecenas diam lacus platea ac purus magna in. Scelerisque senectus eget mi id amet sagittis risus vitae.",
+        "image": "images/placeholder.png",
+        "mobileImage": "images/placeholder.png"
+      },
+      "sectionThree": {
+        "imageOneMobile": "images/placeholder.png",
+        "imageOne": "images/placeholder.png",
+        "imageTwoMobile": "images/placeholder.png",
+        "imageTwo": "images/placeholder.png",
+        "imageThreeMobile": "images/placeholder.png",
+        "imageThree": "images/placeholder.png",
+        "text": "The logo is created by combining a cheetah silhouette, with the lettermarks enclosed in a circular shape. The circle represents stability, continuity, and perseverance."
+      },
+      "sectionFour": {
+        "imageOneMobile": "images/placeholder.png",
+        "imageOne": "images/placeholder.png",
+        "imageTwoMobile": "images/placeholder.png",
+        "imageTwo": "images/placeholder.png",
+        "imageThreeMobile": "images/placeholder.png",
+        "imageThree": "images/placeholder.png",
+        "headingOne": "Train good.",
+        "headingTwo": "Eat good.",
+        "headingThree": "Look good."
+      },
+      "sectionFive": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "text": "Lorem ipsum dolor sit amet consectetur. Egestas auctor egestas amet et facilisis a dui. Nec magna morbi quam augue vitae aliquet."
+      },
+      "sectionSix": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Eco Energy",
+    "description": "Logo design",
+    "image": "images/Desktop/ecoenergy-cover.png",
+    "modalContent": {
+      "content": "Content for Ecco Energy modal",
+      "featuredImg": "images/work-img .png",
+      "mainTitle": "Feel the power of nature",
+      "sectionOne": {
+        "title": "Section header",
+        "text": "Lorem ipsum dolor sit amet consectetur. Interdum viverra varius eget congue consectetur. Dui cursus sagittis at quis sed tristique lacus. Phasellus phasellus convallis molestie quis cursus amet viverra congue sed. Mauris sit tristique praesent arcu amet turpis. Fames leo nulla rutrum sit. Nulla quis donec sit lectus erat scelerisque velit."
+      },
+      "sectionTwo": {
+        "text": "Lorem ipsum dolor sit amet consectetur. Egestas auctor egestas amet et facilisis a dui. Nec magna morbi quam augue vitae aliquet. Maecenas diam lacus platea ac purus magna in. Scelerisque senectus eget mi id amet sagittis risus vitae.",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "mobileImage": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      },
+      "sectionThree": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "text": "Lorem ipsum dolor sit amet consectetur. Interdum viverra varius eget congue consectetur. Dui cursus sagittis at quis sed tristique lacus. Phasellus phasellus convallis molestie quis cursus amet viverra congue sed. Mauris sit tristique praesent arcu amet turpis. Fames leo nulla rutrum sit. Nulla quis donec sit lectus erat scelerisque velit."
+      },
+      "sectionFour": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "headingOne": "Build Apps Fast",
+        "headingTwo": "Responsive Layouts",
+        "headingThree": "Collaborate"
+      },
+      "sectionFive": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "text": "Bubble provides a wide range of pre-built templates and UI components that help users get started quickly with their app development process."
+      },
+      "sectionSix": {
+        "headingColored": "Customize",
+        "heading": "Your Designs",
+        "text": "With Bubble's no-code platform, you can customize every aspect of your app's design without writing a single line of code.",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      },
+      "sectionSeven": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Mindful Souls",
+    "description": "Website redesign",
+    "image": "images/Desktop/mindfulsouls-cover.png",
+    "modalContent": {
+      "content": "Content for Mindful Sould modal",
+      "featuredImg": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+      "mainTitle": "Urbania",
+      "sectionOne": {
+        "title": "Shop Till You Drop",
+        "text": "Urbania is an e-commerce platform that offers a wide range of products for urban living. From furniture to home electronics, Urbania has everything you need to furnish your perfect city home."
+      },
+      "sectionTwo": {
+        "text": "The logo is inspired by the cityscape, representing tall buildings in a modern and abstract style. The color scheme reflects the vibrancy of city life and the variety of products available on the platform.",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "mobileImage": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      },
+      "sectionThree": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "text": "Urbania's website features a user-friendly interface with a focus on simplicity and intuitive navigation, making the online shopping experience enjoyable."
+      },
+      "sectionFour": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "headingOne": "Easy Browsing",
+        "headingTwo": "Secure Payment",
+        "headingThree": "Order Tracking"
+      },
+      "sectionFive": {
+        "imageOneMobile": "images/store-mobile6.png",
+        "imageTwoMobile": "images/store-mobile7.png",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "text": "Urbania's platform is designed to provide a seamless and convenient shopping experience, with quick access to featured products and special offers."
+      },
+      "sectionSix": {
+        "headingColored": "Stay",
+        "heading": "Connected",
+        "text": "Urbania's website is fully responsive and optimized for mobile devices, allowing users to shop on the go and stay connected at all times.",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      },
+      "sectionSeven": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Mindful Souls",
+    "description": "Website redesign",
+    "image": "images/Desktop/mindfulsouls-cover.png",
+    "modalContent": {
+      "content": "Content for Mindful ",
+      "featuredImg": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+      "mainTitle": "Test",
+      "sectionOne": {
+        "title": "Shop Till You Drop",
+        "text": "Urbania is an e-commerce platform that offers a wide range of products for urban living. From furniture to home electronics, Urbania has everything you need to furnish your perfect city home."
+      },
+      "sectionTwo": {
+        "text": "The logo is inspired by the cityscape, representing tall buildings in a modern and abstract style. The color scheme reflects the vibrancy of city life and the variety of products available on the platform.",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "mobileImage": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      },
+      "sectionThree": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "text": "Urbania's website features a user-friendly interface with a focus on simplicity and intuitive navigation, making the online shopping experience enjoyable."
+      },
+      "sectionFour": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "headingOne": "Easy Browsing",
+        "headingTwo": "Secure Payment",
+        "headingThree": "Order Tracking"
+      },
+      "sectionFive": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "text": "Urbania's platform is designed to provide a seamless and convenient shopping experience, with quick access to featured products and special offers."
+      },
+      "sectionSix": {
+        "headingColored": "Stay",
+        "heading": "Connected",
+        "text": "Urbania's website is fully responsive and optimized for mobile devices, allowing users to shop on the go and stay connected at all times.",
+        "image": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      },
+      "sectionSeven": {
+        "imageOneMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageOne": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwoMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageTwo": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThreeMobile": "https://fakeimg.pl/576x700/cccccc/b5b5b5",
+        "imageThree": "https://fakeimg.pl/576x700/cccccc/b5b5b5"
+      }
+    }
+  }
+]
